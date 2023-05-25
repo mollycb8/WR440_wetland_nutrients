@@ -1,2 +1,16 @@
-# References {-}
+# References 
+Cheng, F. Y., Van Meter, K. J., Byrnes, D. K., &amp; Basu, N. B. (2020). Maximizing US nitrate removal through wetland protection and restoration. Nature, 588(7839), 625–630. https://doi.org/10.1038/s41586-020-03042-5 
+
+The Dealware River Basin Commisson. (2017). 2017 Annual Report. 
+
+Li, F., Lu, L., Zheng, X., Ngo, H. H., Liang, S., Guo, W., &amp; Zhang, X. (2014). Enhanced nitrogen removal in constructed wetlands: Effects of dissolved oxygen and step-feeding. Bioresource Technology, 169, 395–402. https://doi.org/10.1016/j.biortech.2014.07.004 
+
+Lowe, A. T., Bos, J., &amp; Ruesink, J. (2019). Ecosystem metabolism drives ph variability and modulates long-term ocean acidification in the Northeast Pacific Coastal Ocean. Scientific Reports, 9(1). https://doi.org/10.1038/s41598-018-37764-4 
+
+Nilsson, J. E., Liess, A., Ehde, P. M., &amp; Weisner, S. E. B. (2020). Mature wetland ecosystems remove nitrogen equally well regardless of initial planting. Science of The Total Environment, 716, 137002. https://doi.org/10.1016/j.scitotenv.2020.137002 
+
+Skiba, U. (2008). Denitrification. Encyclopedia of Ecology, 866–871. https://doi.org/10.1016/b978-008045405-4.00264-0 
+
+Woltemade, C. J., &amp; Woodward, J. (2008). Nitrate removal in a restored spring-fed wetland, Pennsylvania, USA1. JAWRA Journal of the American Water Resources Association, 44(1), 222–234. https://doi.org/10.1111/j.1752-1688.2007.00149.x 
+
 

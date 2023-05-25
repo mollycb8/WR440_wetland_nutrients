@@ -4,32 +4,26 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 5 Results | Bookdown Template</title>
-  <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
-The HTML output format for this example is bookdown::gitbook,
-set in the _output.yml file.</p>" />
-  <meta name="generator" content="bookdown 0.30 and GitBook 2.6.7" />
+  <title>Chapter 4 Results | Nitrate and Nitrite Removal through Wetlands in the Delaware River</title>
+  <meta name="description" content="Chapter 4 Results | Nitrate and Nitrite Removal through Wetlands in the Delaware River" />
+  <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 5 Results | Bookdown Template" />
+  <meta property="og:title" content="Chapter 4 Results | Nitrate and Nitrite Removal through Wetlands in the Delaware River" />
   <meta property="og:type" content="book" />
   
-  <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
-The HTML output format for this example is bookdown::gitbook,
-set in the _output.yml file.</p>" />
-  <meta name="github-repo" content="rstudio/bookdown-demo" />
+  
+  
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 5 Results | Bookdown Template" />
+  <meta name="twitter:title" content="Chapter 4 Results | Nitrate and Nitrite Removal through Wetlands in the Delaware River" />
   
-  <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
-The HTML output format for this example is bookdown::gitbook,
-set in the _output.yml file.</p>" />
+  
   
 
-<meta name="author" content="" />
+<meta name="author" content="Caz Bell" />
 
 
-<meta name="date" content="2023-04-04" />
+<meta name="date" content="2023-05-09" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -58,6 +52,20 @@ set in the _output.yml file.</p>" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.6.1/htmlwidgets.js"></script>
+<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding-2.1.1/leaflet.js"></script>
+<script src="libs/leaflet-providers-1.9.0/leaflet-providers_1.9.0.js"></script>
+<script src="libs/leaflet-providers-plugin-2.1.1/leaflet-providers-plugin.js"></script>
+<link href="libs/leaflet-awesomemarkers-2.0.3/leaflet.awesome-markers.css" rel="stylesheet" />
+<script src="libs/leaflet-awesomemarkers-2.0.3/leaflet.awesome-markers.min.js"></script>
+<link href="libs/bootstrap-3.3.7/bootstrap.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.7/bootstrap.min.js"></script>
 
 
 <style type="text/css">
@@ -125,28 +133,6 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
-<style type="text/css">
-/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}
-</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -164,16 +150,32 @@ div.csl-indent {
 <li><a href="./">A Minimal Book Example</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Overview</a>
+<li class="chapter" data-level="1" data-path="abstract.html"><a href="abstract.html"><i class="fa fa-check"></i><b>1</b> Abstract</a></li>
+<li class="chapter" data-level="2" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>2</b> Introduction</a></li>
+<li class="chapter" data-level="3" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>3</b> Methods</a>
 <ul>
-<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#render-book"><i class="fa fa-check"></i><b>1.1</b> Render book</a></li>
+<li class="chapter" data-level="3.1" data-path="methods.html"><a href="methods.html#data-collection"><i class="fa fa-check"></i><b>3.1</b> Data Collection</a></li>
+<li class="chapter" data-level="3.2" data-path="methods.html"><a href="methods.html#statistical-analysis"><i class="fa fa-check"></i><b>3.2</b> Statistical Analysis</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="abstract.html"><a href="abstract.html"><i class="fa fa-check"></i><b>2</b> Abstract</a></li>
-<li class="chapter" data-level="3" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>3</b> Intro</a></li>
-<li class="chapter" data-level="4" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>4</b> Methods</a></li>
-<li class="chapter" data-level="5" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>5</b> Results</a></li>
-<li class="chapter" data-level="6" data-path="discussion.html"><a href="discussion.html"><i class="fa fa-check"></i><b>6</b> Discussion</a></li>
-<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="4" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>4</b> Results</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="results.html"><a href="results.html#nitrate-concentrations"><i class="fa fa-check"></i><b>4.1</b> Nitrate Concentrations</a></li>
+<li class="chapter" data-level="4.2" data-path="results.html"><a href="results.html#nitrite-concentrations"><i class="fa fa-check"></i><b>4.2</b> Nitrite Concentrations</a></li>
+<li class="chapter" data-level="4.3" data-path="results.html"><a href="results.html#percent-change"><i class="fa fa-check"></i><b>4.3</b> Percent Change</a></li>
+<li class="chapter" data-level="4.4" data-path="results.html"><a href="results.html#anova-for-nitrate"><i class="fa fa-check"></i><b>4.4</b> ANOVA for Nitrate</a></li>
+<li class="chapter" data-level="4.5" data-path="results.html"><a href="results.html#anova-for-nitrite"><i class="fa fa-check"></i><b>4.5</b> ANOVA for Nitrite</a></li>
+<li class="chapter" data-level="4.6" data-path="results.html"><a href="results.html#dissolved-oxygen"><i class="fa fa-check"></i><b>4.6</b> Dissolved Oxygen</a></li>
+<li class="chapter" data-level="4.7" data-path="results.html"><a href="results.html#temperature"><i class="fa fa-check"></i><b>4.7</b> Temperature</a></li>
+<li class="chapter" data-level="4.8" data-path="results.html"><a href="results.html#ph"><i class="fa fa-check"></i><b>4.8</b> pH</a></li>
+<li class="chapter" data-level="4.9" data-path="results.html"><a href="results.html#correlation-of-parameter"><i class="fa fa-check"></i><b>4.9</b> Correlation of Parameter</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="discussion.html"><a href="discussion.html"><i class="fa fa-check"></i><b>5</b> Discussion</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="discussion.html"><a href="discussion.html#wetland-removal"><i class="fa fa-check"></i><b>5.1</b> Wetland Removal</a></li>
+<li class="chapter" data-level="5.2" data-path="discussion.html"><a href="discussion.html#environmental-factors"><i class="fa fa-check"></i><b>5.2</b> Environmental Factors</a></li>
+<li class="chapter" data-level="5.3" data-path="discussion.html"><a href="discussion.html#correlations"><i class="fa fa-check"></i><b>5.3</b> Correlations</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>6</b> References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -186,7 +188,7 @@ div.csl-indent {
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Bookdown Template</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Nitrate and Nitrite Removal through Wetlands in the Delaware River</a>
           </h1>
         </div>
 
@@ -194,9 +196,253 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="results" class="section level1 hasAnchor" number="5">
-<h1><span class="header-section-number">Chapter 5</span> Results<a href="results.html#results" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="results" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">Chapter 4</span> Results<a href="results.html#results" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="nitrate-concentrations" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> Nitrate Concentrations<a href="results.html#nitrate-concentrations" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Nitrate concentrations were quite similar throughout the year. When looking at the seasons, there is not one that stands out as having the highest nitrate concentrations overall between all the water years. In the 2018 water year, average nitrate concentrations were the highest in the winter and spring months. In the 2019 water year, average nitrate concentrations were the highest in August specifically and the second highest in September. In the 2020 water year, the highest average nitrate concentrations were found in September. The highest average nitrate concentration reported for the before position was in September of the 2019 water year with a value of 5.76 mg/L . The highest reported value of nitrate in the in position was 4.46 mg/L in September of 2019. For the after position, the highest average value was in October 2019 at 1.68 mg/L. The lowest avergae nitrate value reported was in February of the 2020 water year at 0.012 mg/L.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="results.html#cb4-1" aria-hidden="true" tabindex="-1"></a>custom_order <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&#39;Sep&#39;</span>,<span class="st">&quot;Oct&quot;</span>, <span class="st">&quot;Nov&quot;</span>, <span class="st">&quot;Dec&quot;</span>, <span class="st">&quot;Jan&quot;</span>, <span class="st">&quot;Feb&quot;</span>, <span class="st">&quot;Mar&quot;</span>, <span class="st">&quot;Apr&quot;</span>, <span class="st">&quot;May&quot;</span>, <span class="st">&quot;Jun&quot;</span>, <span class="st">&quot;Jul&quot;</span>, <span class="st">&quot;Aug&quot;</span>)</span>
+<span id="cb4-2"><a href="results.html#cb4-2" aria-hidden="true" tabindex="-1"></a>Total_Data<span class="sc">$</span>month <span class="ot">&lt;-</span> <span class="fu">factor</span>(Total_Data<span class="sc">$</span>month, <span class="at">levels =</span> custom_order)</span>
+<span id="cb4-3"><a href="results.html#cb4-3" aria-hidden="true" tabindex="-1"></a>Total_Data<span class="sc">$</span>position <span class="ot">&lt;-</span> <span class="fu">factor</span>(Total_Data<span class="sc">$</span>position, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">&quot;before&quot;</span>, <span class="st">&quot;in&quot;</span>, <span class="st">&quot;after&quot;</span>))</span>
+<span id="cb4-4"><a href="results.html#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(Total_Data, <span class="fu">aes</span>(<span class="at">x =</span> month, <span class="at">y =</span> Nitrate, <span class="at">fill =</span> position)) <span class="sc">+</span></span>
+<span id="cb4-5"><a href="results.html#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">position =</span> <span class="st">&quot;dodge&quot;</span>) <span class="sc">+</span></span>
+<span id="cb4-6"><a href="results.html#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Nitrate Levels in the Delaware River&quot;</span>, <span class="at">x =</span> <span class="st">&quot;Month&quot;</span>, <span class="at">y =</span> <span class="st">&quot;Nitrate Concentration (mg/L)&quot;</span>) <span class="sc">+</span> </span>
+<span id="cb4-7"><a href="results.html#cb4-7" aria-hidden="true" tabindex="-1"></a>   <span class="fu">facet_grid</span>(water_year<span class="sc">~</span> <span class="fu">factor</span>(season, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">&quot;Fall&quot;</span>, <span class="st">&quot;Winter&quot;</span>, <span class="st">&quot;Spring&quot;</span>, <span class="st">&quot;Summer&quot;</span>)), <span class="at">scales=</span><span class="st">&quot;free&quot;</span>, <span class="at">space=</span><span class="st">&quot;free_x&quot;</span>)</span></code></pre></div>
+<pre><code>## Warning: Removed 11 rows containing missing values (`geom_col()`).</code></pre>
+<p><img src="_main_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>Figure 2. Nitrate concentrations in mg/L for the Delaware River for the 2018 to 2020 water years color coded by the position along the Delaware River in reference to the wetlands. Facet grid was used to separate water year and seasons into individual graphs.</p>
+</div>
+<div id="nitrite-concentrations" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> Nitrite Concentrations<a href="results.html#nitrite-concentrations" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Nitrite concentrations changed throughout the water years with the highest concentrations occurring in the fall and the lowest concentrations occurring in the winter months. It was found that generally in the fall, nitrite concentrations were the highest. The highest average nitrite concentration was 0.077 mg/L and it occurred at the in position in September of 2019. Overall, the month of September held the highest average nitrite concentration. The lowest concentration in nitrite occurred in October of 2018 in the before position at only 0.001 mg/L. Nitrite concentrations did not seem to change based on the monitioring location position in regards to the wetlands.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="results.html#cb6-1" aria-hidden="true" tabindex="-1"></a>Total_Data<span class="sc">$</span>position <span class="ot">&lt;-</span> <span class="fu">factor</span>(Total_Data<span class="sc">$</span>position, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">&quot;before&quot;</span>, <span class="st">&quot;in&quot;</span>, <span class="st">&quot;after&quot;</span>))</span>
+<span id="cb6-2"><a href="results.html#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(Total_Data, <span class="fu">aes</span>(<span class="at">x =</span> month, <span class="at">y =</span> Nitrite, <span class="at">fill =</span> position)) <span class="sc">+</span></span>
+<span id="cb6-3"><a href="results.html#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">position =</span> <span class="st">&quot;dodge&quot;</span>) <span class="sc">+</span></span>
+<span id="cb6-4"><a href="results.html#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Nitrite Levels in the Delaware River&quot;</span>, <span class="at">x =</span> <span class="st">&quot;Month&quot;</span>, <span class="at">y =</span> <span class="st">&quot;Nitrite Concentration (mg/L)&quot;</span>) <span class="sc">+</span></span>
+<span id="cb6-5"><a href="results.html#cb6-5" aria-hidden="true" tabindex="-1"></a>   <span class="fu">facet_grid</span>(water_year<span class="sc">~</span> <span class="fu">factor</span>(season, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">&quot;Fall&quot;</span>, <span class="st">&quot;Winter&quot;</span>, <span class="st">&quot;Spring&quot;</span>, <span class="st">&quot;Summer&quot;</span>)), <span class="at">scales=</span><span class="st">&quot;free&quot;</span>, <span class="at">space=</span><span class="st">&quot;free_x&quot;</span>)</span></code></pre></div>
+<pre><code>## Warning: Removed 22 rows containing missing values (`geom_col()`).</code></pre>
+<p><img src="_main_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p>Figure 3. Nitrite concentrations in mg/L for the Delaware River for the 2018 to 2020 water years color coded by the position along the Delaware River in reference to the wetlands. Facet grid was used to separate water year and seasons into individual graphs.</p>
+</div>
+<div id="percent-change" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> Percent Change<a href="results.html#percent-change" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="results.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">#monthly values</span></span>
+<span id="cb8-2"><a href="results.html#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="results.html#cb8-3" aria-hidden="true" tabindex="-1"></a>in_monthly <span class="ot">&lt;-</span> in_wetlands <span class="sc">%&gt;%</span></span>
+<span id="cb8-4"><a href="results.html#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Nutrient, water_year, month) <span class="sc">%&gt;%</span></span>
+<span id="cb8-5"><a href="results.html#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">Result =</span> <span class="fu">mean</span>(Result))<span class="sc">%&gt;%</span></span>
+<span id="cb8-6"><a href="results.html#cb8-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">position =</span> <span class="fu">rep</span>(<span class="st">&#39;in&#39;</span>))</span></code></pre></div>
+<pre><code>## `summarise()` has grouped output by &#39;Nutrient&#39;, &#39;water_year&#39;. You can override using the `.groups` argument.</code></pre>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="results.html#cb10-1" aria-hidden="true" tabindex="-1"></a>before_monthly <span class="ot">&lt;-</span> before_wetlands <span class="sc">%&gt;%</span></span>
+<span id="cb10-2"><a href="results.html#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Nutrient, water_year, month) <span class="sc">%&gt;%</span></span>
+<span id="cb10-3"><a href="results.html#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">Result =</span> <span class="fu">mean</span>(Result)) <span class="sc">%&gt;%</span></span>
+<span id="cb10-4"><a href="results.html#cb10-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">position =</span> <span class="fu">rep</span>(<span class="st">&#39;before&#39;</span>))</span></code></pre></div>
+<pre><code>## `summarise()` has grouped output by &#39;Nutrient&#39;, &#39;water_year&#39;. You can override using the `.groups` argument.</code></pre>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="results.html#cb12-1" aria-hidden="true" tabindex="-1"></a>after_monthly <span class="ot">&lt;-</span> after_wetlands <span class="sc">%&gt;%</span></span>
+<span id="cb12-2"><a href="results.html#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Nutrient, water_year, month) <span class="sc">%&gt;%</span></span>
+<span id="cb12-3"><a href="results.html#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">Result =</span> <span class="fu">mean</span>(Result))<span class="sc">%&gt;%</span></span>
+<span id="cb12-4"><a href="results.html#cb12-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">position =</span> <span class="fu">rep</span>(<span class="st">&#39;after&#39;</span>))</span></code></pre></div>
+<pre><code>## `summarise()` has grouped output by &#39;Nutrient&#39;, &#39;water_year&#39;. You can override using the `.groups` argument.</code></pre>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="results.html#cb14-1" aria-hidden="true" tabindex="-1"></a>Total_Data_new2 <span class="ot">&lt;-</span> <span class="fu">rbind</span>(before_monthly, after_monthly, in_monthly) <span class="sc">%&gt;%</span></span>
+<span id="cb14-2"><a href="results.html#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">water_year =</span> <span class="fu">as.factor</span>(water_year))</span></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="results.html#cb15-1" aria-hidden="true" tabindex="-1"></a>wider <span class="ot">&lt;-</span> <span class="fu">pivot_wider</span>(Total_Data_new2, <span class="at">names_from =</span> Nutrient, <span class="at">values_from =</span> Result, <span class="at">values_fn =</span> {mean})</span>
+<span id="cb15-2"><a href="results.html#cb15-2" aria-hidden="true" tabindex="-1"></a>pos_order <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;before&quot;</span>, <span class="st">&quot;in&quot;</span>, <span class="st">&quot;after&quot;</span>)</span>
+<span id="cb15-3"><a href="results.html#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-4"><a href="results.html#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert month column to ordered factor</span></span>
+<span id="cb15-5"><a href="results.html#cb15-5" aria-hidden="true" tabindex="-1"></a>wider<span class="sc">$</span>month <span class="ot">&lt;-</span> <span class="fu">factor</span>(wider<span class="sc">$</span>month, <span class="at">levels =</span> month.abb)</span>
+<span id="cb15-6"><a href="results.html#cb15-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-7"><a href="results.html#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Arrange the data by year, month, and position</span></span>
+<span id="cb15-8"><a href="results.html#cb15-8" aria-hidden="true" tabindex="-1"></a>df_ordered <span class="ot">&lt;-</span> wider <span class="sc">%&gt;%</span></span>
+<span id="cb15-9"><a href="results.html#cb15-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(water_year, month, <span class="fu">match</span>(position, pos_order))</span>
+<span id="cb15-10"><a href="results.html#cb15-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-11"><a href="results.html#cb15-11" aria-hidden="true" tabindex="-1"></a>pc <span class="ot">&lt;-</span> df_ordered <span class="sc">%&gt;%</span> </span>
+<span id="cb15-12"><a href="results.html#cb15-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pcrate =</span> (Nitrate <span class="sc">-</span> <span class="fu">lag</span>(Nitrate)) <span class="sc">/</span> <span class="fu">lag</span>(Nitrate) <span class="sc">*</span> <span class="dv">100</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb15-13"><a href="results.html#cb15-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pcrite =</span> (Nitrite <span class="sc">-</span> <span class="fu">lag</span>(Nitrite)) <span class="sc">/</span> <span class="fu">lag</span>(Nitrite) <span class="sc">*</span> <span class="dv">100</span>) </span>
+<span id="cb15-14"><a href="results.html#cb15-14" aria-hidden="true" tabindex="-1"></a>pc<span class="sc">$</span>season <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(pc<span class="sc">$</span>month <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;Dec&quot;</span>, <span class="st">&quot;Jan&quot;</span>, <span class="st">&quot;Feb&quot;</span>), <span class="st">&quot;Winter&quot;</span>,</span>
+<span id="cb15-15"><a href="results.html#cb15-15" aria-hidden="true" tabindex="-1"></a>                        <span class="fu">ifelse</span>(pc<span class="sc">$</span>month <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;Mar&quot;</span>, <span class="st">&quot;Apr&quot;</span>, <span class="st">&quot;May&quot;</span>), <span class="st">&quot;Spring&quot;</span>,</span>
+<span id="cb15-16"><a href="results.html#cb15-16" aria-hidden="true" tabindex="-1"></a>                               <span class="fu">ifelse</span>(pc<span class="sc">$</span>month <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;Jun&quot;</span>, <span class="st">&quot;Jul&quot;</span>, <span class="st">&quot;Aug&quot;</span>), <span class="st">&quot;Summer&quot;</span>,</span>
+<span id="cb15-17"><a href="results.html#cb15-17" aria-hidden="true" tabindex="-1"></a>                                      <span class="fu">ifelse</span>(pc<span class="sc">$</span>month <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;Sep&quot;</span>, <span class="st">&quot;Oct&quot;</span>, <span class="st">&quot;Nov&quot;</span>), <span class="st">&quot;Fall&quot;</span>, <span class="cn">NA</span>))))</span></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="results.html#cb16-1" aria-hidden="true" tabindex="-1"></a>custom_order <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&#39;Sep&#39;</span>,<span class="st">&quot;Oct&quot;</span>, <span class="st">&quot;Nov&quot;</span>, <span class="st">&quot;Dec&quot;</span>, <span class="st">&quot;Jan&quot;</span>, <span class="st">&quot;Feb&quot;</span>, <span class="st">&quot;Mar&quot;</span>, <span class="st">&quot;Apr&quot;</span>, <span class="st">&quot;May&quot;</span>, <span class="st">&quot;Jun&quot;</span>, <span class="st">&quot;Jul&quot;</span>, <span class="st">&quot;Aug&quot;</span>)</span>
+<span id="cb16-2"><a href="results.html#cb16-2" aria-hidden="true" tabindex="-1"></a>pc<span class="sc">$</span>month <span class="ot">&lt;-</span> <span class="fu">factor</span>(pc<span class="sc">$</span>month, <span class="at">levels =</span> custom_order)</span>
+<span id="cb16-3"><a href="results.html#cb16-3" aria-hidden="true" tabindex="-1"></a>pc <span class="ot">&lt;-</span> pc <span class="sc">%&gt;%</span> </span>
+<span id="cb16-4"><a href="results.html#cb16-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">na.omit</span>()</span>
+<span id="cb16-5"><a href="results.html#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(pc, <span class="fu">aes</span>(<span class="at">x =</span> month, <span class="at">y =</span> pcrate, <span class="at">fill =</span> position)) <span class="sc">+</span></span>
+<span id="cb16-6"><a href="results.html#cb16-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">&quot;identity&quot;</span>, <span class="at">position =</span> <span class="st">&quot;dodge&quot;</span>) <span class="sc">+</span> </span>
+<span id="cb16-7"><a href="results.html#cb16-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Percent Change of Nitrate based on position in the Delaware River&quot;</span>, <span class="at">x =</span> <span class="st">&quot;Month&quot;</span>, <span class="at">y =</span> <span class="st">&quot;Percent Change&quot;</span>) <span class="sc">+</span></span>
+<span id="cb16-8"><a href="results.html#cb16-8" aria-hidden="true" tabindex="-1"></a>   <span class="fu">facet_grid</span>(water_year<span class="sc">~</span> <span class="fu">factor</span>(season, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">&quot;Fall&quot;</span>, <span class="st">&quot;Winter&quot;</span>, <span class="st">&quot;Spring&quot;</span>, <span class="st">&quot;Summer&quot;</span>)), <span class="at">scales=</span><span class="st">&quot;free&quot;</span>, <span class="at">space=</span><span class="st">&quot;free_x&quot;</span>, )</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<p>Figure 4. Percent change of Nitrate concentration for the Delaware River for the 2018 to 2020 water years. After represents the change from in to after, before is after of the previous month to before, and in is before to in. The percent change could not be plotted for before in themonth of January since there is no previous reference.</p>
+<p>The largest percent change that occurs for nitrate is for the before position. The percent change for before represents the change from the after site to the before site. The large increase in percent change shows that the before positions have higher nitrate levels than the after. The lowest percent changes occurs for the in position which represents the change between the before and in position. Since this is a negative value it shows that as water travels from the before wetlands position to the in wetlands position, nitrate levels will decrease. There was a very small percent change that occurred between the in and after sites, and it varied between positive and negative values.</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="results.html#cb17-1" aria-hidden="true" tabindex="-1"></a>custom_order <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&#39;Sep&#39;</span>,<span class="st">&quot;Oct&quot;</span>, <span class="st">&quot;Nov&quot;</span>, <span class="st">&quot;Dec&quot;</span>, <span class="st">&quot;Jan&quot;</span>, <span class="st">&quot;Feb&quot;</span>, <span class="st">&quot;Mar&quot;</span>, <span class="st">&quot;Apr&quot;</span>, <span class="st">&quot;May&quot;</span>, <span class="st">&quot;Jun&quot;</span>, <span class="st">&quot;Jul&quot;</span>, <span class="st">&quot;Aug&quot;</span>)</span>
+<span id="cb17-2"><a href="results.html#cb17-2" aria-hidden="true" tabindex="-1"></a>pc<span class="sc">$</span>month <span class="ot">&lt;-</span> <span class="fu">factor</span>(pc<span class="sc">$</span>month, <span class="at">levels =</span> custom_order)</span>
+<span id="cb17-3"><a href="results.html#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(pc, <span class="fu">aes</span>(<span class="at">x =</span> month, <span class="at">y =</span> pcrite, <span class="at">fill =</span> position)) <span class="sc">+</span></span>
+<span id="cb17-4"><a href="results.html#cb17-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">&quot;identity&quot;</span>, <span class="at">position =</span> <span class="st">&quot;dodge&quot;</span>) <span class="sc">+</span> </span>
+<span id="cb17-5"><a href="results.html#cb17-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Percent Change of Nitrite based on position in the Delaware River&quot;</span>, <span class="at">x =</span> <span class="st">&quot;Month&quot;</span>, <span class="at">y =</span> <span class="st">&quot;Percent Change&quot;</span>) <span class="sc">+</span></span>
+<span id="cb17-6"><a href="results.html#cb17-6" aria-hidden="true" tabindex="-1"></a>   <span class="fu">facet_grid</span>(water_year<span class="sc">~</span> <span class="fu">factor</span>(season, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">&quot;Fall&quot;</span>, <span class="st">&quot;Winter&quot;</span>, <span class="st">&quot;Spring&quot;</span>, <span class="st">&quot;Summer&quot;</span>)), <span class="at">scales=</span><span class="st">&quot;free&quot;</span>, <span class="at">space=</span><span class="st">&quot;free_x&quot;</span>, )</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<p>Figure 5. Percent change of Nitrite concentration for the Delaware River for the 2018 to 2020 water years. After represents the change from in to after, before is after of the previous month to before, and in is before to in. The percent change could not be plotted for before in themonth of January since there is no previous reference.</p>
+<p>The percent change in nitrite is quite variable with no recognizable patterns. The highest percent change was 500% for before in September of 2018. The lowest however, was in October of 2019 with -93%.</p>
+</div>
+<div id="anova-for-nitrate" class="section level2 hasAnchor" number="4.4">
+<h2><span class="header-section-number">4.4</span> ANOVA for Nitrate<a href="results.html#anova-for-nitrate" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>There was a statistically significant change in nitrate concentrations as water moved through the wetlands. Specifically, the change between the before and after positions as well as the change in the before and in positions were statistically significant. However, there was no significant change in nitrate concentrations between the in and after positions. This would support the idea that as water travels through wetlands, nitrate levels would decrease. Thus meaning that wetlands act as a source for nitrate removal and can help improve water quality.</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="results.html#cb18-1" aria-hidden="true" tabindex="-1"></a>nitrate_new <span class="ot">&lt;-</span> Total_Data_new <span class="sc">%&gt;%</span></span>
+<span id="cb18-2"><a href="results.html#cb18-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Nutrient <span class="sc">==</span> <span class="st">&#39;Nitrate&#39;</span>) </span></code></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="results.html#cb19-1" aria-hidden="true" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="fu">aov</span>(Result <span class="sc">~</span> position, <span class="at">data =</span> nitrate_new)</span>
+<span id="cb19-2"><a href="results.html#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model)</span></code></pre></div>
+<pre><code>##              Df Sum Sq Mean Sq F value  Pr(&gt;F)    
+## position      2   51.8   25.90   17.62 9.1e-08 ***
+## Residuals   197  289.5    1.47                    
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="results.html#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">TukeyHSD</span>(model)</span></code></pre></div>
+<pre><code>##   Tukey multiple comparisons of means
+##     95% family-wise confidence level
+## 
+## Fit: aov(formula = Result ~ position, data = nitrate_new)
+## 
+## $position
+##                    diff        lwr        upr     p adj
+## before-after  1.0843685  0.5611636  1.6075734 0.0000061
+## in-after      0.1174873 -0.4913284  0.7263030 0.8919127
+## in-before    -0.9668812 -1.4614422 -0.4723202 0.0000209</code></pre>
+</div>
+<div id="anova-for-nitrite" class="section level2 hasAnchor" number="4.5">
+<h2><span class="header-section-number">4.5</span> ANOVA for Nitrite<a href="results.html#anova-for-nitrite" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Through the ANOVA test that was run for nitrite concentrations based on positions, it was found that there is no significant change as water travels through the wetlands. This would mean that wetlands in the Delaware River do not play a significant role in the removal of nitrites. Nitrite concentrations were quite variable throughout the seasons and water year. Due to this, there is a greater chance that the avergae value would be 0 depending on position as all water years and seasons were taken into account. To if it was possible that this could be an issue three more anova tests were created looking at each individual water year.</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="results.html#cb23-1" aria-hidden="true" tabindex="-1"></a>nitrite_new <span class="ot">&lt;-</span> Total_Data_new <span class="sc">%&gt;%</span></span>
+<span id="cb23-2"><a href="results.html#cb23-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Nutrient <span class="sc">==</span> <span class="st">&#39;Nitrite&#39;</span>) </span>
+<span id="cb23-3"><a href="results.html#cb23-3" aria-hidden="true" tabindex="-1"></a>model_rite <span class="ot">&lt;-</span> <span class="fu">aov</span>(Result <span class="sc">~</span> position, <span class="at">data =</span> nitrite_new)</span>
+<span id="cb23-4"><a href="results.html#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model)</span></code></pre></div>
+<pre><code>##              Df Sum Sq Mean Sq F value  Pr(&gt;F)    
+## position      2   51.8   25.90   17.62 9.1e-08 ***
+## Residuals   197  289.5    1.47                    
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="results.html#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">TukeyHSD</span>(model_rite)</span></code></pre></div>
+<pre><code>##   Tukey multiple comparisons of means
+##     95% family-wise confidence level
+## 
+## Fit: aov(formula = Result ~ position, data = nitrite_new)
+## 
+## $position
+##                      diff          lwr         upr     p adj
+## before-after -0.001249318 -0.006102545 0.003603909 0.8156268
+## in-after     -0.003265372 -0.008740291 0.002209546 0.3379610
+## in-before    -0.002016054 -0.006614103 0.002581995 0.5548463</code></pre>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="results.html#cb27-1" aria-hidden="true" tabindex="-1"></a>nitrite_2018 <span class="ot">&lt;-</span> nitrite_new <span class="sc">%&gt;%</span></span>
+<span id="cb27-2"><a href="results.html#cb27-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(water_year <span class="sc">==</span> <span class="st">&#39;2018&#39;</span>) </span>
+<span id="cb27-3"><a href="results.html#cb27-3" aria-hidden="true" tabindex="-1"></a>model_rite18 <span class="ot">&lt;-</span> <span class="fu">aov</span>(Result <span class="sc">~</span> position, <span class="at">data =</span> nitrite_2018)</span>
+<span id="cb27-4"><a href="results.html#cb27-4" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model_rite18)</span></code></pre></div>
+<pre><code>##             Df   Sum Sq   Mean Sq F value Pr(&gt;F)
+## position     2 0.000115 5.753e-05   0.739  0.482
+## Residuals   57 0.004436 7.782e-05</code></pre>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="results.html#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">TukeyHSD</span>(model_rite18)</span></code></pre></div>
+<pre><code>##   Tukey multiple comparisons of means
+##     95% family-wise confidence level
+## 
+## Fit: aov(formula = Result ~ position, data = nitrite_2018)
+## 
+## $position
+##                       diff          lwr         upr     p adj
+## before-after -0.0005444169 -0.007559021 0.006470187 0.9809602
+## in-after     -0.0034778846 -0.011404662 0.004448893 0.5451753
+## in-before    -0.0029334677 -0.009468345 0.003601410 0.5301264</code></pre>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="results.html#cb31-1" aria-hidden="true" tabindex="-1"></a>nitrite_2019 <span class="ot">&lt;-</span> nitrite_new <span class="sc">%&gt;%</span></span>
+<span id="cb31-2"><a href="results.html#cb31-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(water_year <span class="sc">==</span> <span class="st">&#39;2019&#39;</span>) </span>
+<span id="cb31-3"><a href="results.html#cb31-3" aria-hidden="true" tabindex="-1"></a>model_rite19 <span class="ot">&lt;-</span> <span class="fu">aov</span>(Result <span class="sc">~</span> position, <span class="at">data =</span> nitrite_2019)</span>
+<span id="cb31-4"><a href="results.html#cb31-4" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model_rite19)</span></code></pre></div>
+<pre><code>##             Df   Sum Sq   Mean Sq F value Pr(&gt;F)
+## position     2 0.000008 3.940e-06   0.025  0.976
+## Residuals   57 0.009092 1.595e-04</code></pre>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="results.html#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">TukeyHSD</span>(model_rite19)</span></code></pre></div>
+<pre><code>##   Tukey multiple comparisons of means
+##     95% family-wise confidence level
+## 
+## Fit: aov(formula = Result ~ position, data = nitrite_2019)
+## 
+## $position
+##                      diff          lwr         upr     p adj
+## before-after 0.0004785714 -0.009469371 0.010426514 0.9926395
+## in-after     0.0009936508 -0.009836297 0.011823598 0.9734969
+## in-before    0.0005150794 -0.008666455 0.009696614 0.9900047</code></pre>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="results.html#cb35-1" aria-hidden="true" tabindex="-1"></a>nitrite_2020 <span class="ot">&lt;-</span> nitrite_new <span class="sc">%&gt;%</span></span>
+<span id="cb35-2"><a href="results.html#cb35-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(water_year <span class="sc">==</span> <span class="st">&#39;2020&#39;</span>) </span>
+<span id="cb35-3"><a href="results.html#cb35-3" aria-hidden="true" tabindex="-1"></a>model_rite20 <span class="ot">&lt;-</span> <span class="fu">aov</span>(Result <span class="sc">~</span> position, <span class="at">data =</span> nitrite_2020)</span>
+<span id="cb35-4"><a href="results.html#cb35-4" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model_rite20)</span></code></pre></div>
+<pre><code>##             Df   Sum Sq   Mean Sq F value Pr(&gt;F)
+## position     2 0.000400 0.0002002   1.776  0.179
+## Residuals   52 0.005861 0.0001127</code></pre>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="results.html#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="fu">TukeyHSD</span>(model_rite20)</span></code></pre></div>
+<pre><code>##   Tukey multiple comparisons of means
+##     95% family-wise confidence level
+## 
+## Fit: aov(formula = Result ~ position, data = nitrite_2020)
+## 
+## $position
+##                      diff         lwr         upr     p adj
+## before-after -0.003801061 -0.01235022 0.004748100 0.5351273
+## in-after     -0.007846154 -0.01789261 0.002200301 0.1534218
+## in-before    -0.004045093 -0.01259425 0.004504068 0.4932303</code></pre>
+<p>Even when looking at each water year on it’s own, the change in nitrite concentrations based position of the sample site was not statistically significant.</p>
+</div>
+<div id="dissolved-oxygen" class="section level2 hasAnchor" number="4.6">
+<h2><span class="header-section-number">4.6</span> Dissolved Oxygen<a href="results.html#dissolved-oxygen" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Dissolved oxygen concentrations were the highest in the winter and spring seasons. Throughout the 2018 and 2019 water years, the before position had the highest dissolved oxygen concentration. In 2020, most of the winter through summer months had the highest dissolved oxygen concentrations occurring in the after position.</p>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="results.html#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(Total_Data, <span class="fu">aes</span>(<span class="at">x =</span> month, <span class="at">y =</span> DO, <span class="at">col =</span> position)) <span class="sc">+</span></span>
+<span id="cb39-2"><a href="results.html#cb39-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
+<span id="cb39-3"><a href="results.html#cb39-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Dissolved Oxygen Levels in the Delaware River&quot;</span>, <span class="at">x =</span> <span class="st">&quot;Month&quot;</span>, <span class="at">y =</span> <span class="st">&quot;Dissolved Oxygen Concentration (mg/L)&quot;</span>) <span class="sc">+</span></span>
+<span id="cb39-4"><a href="results.html#cb39-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">facet_grid</span>(water_year<span class="sc">~</span> <span class="fu">factor</span>(season, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">&quot;Fall&quot;</span>, <span class="st">&quot;Winter&quot;</span>, <span class="st">&quot;Spring&quot;</span>, <span class="st">&quot;Summer&quot;</span>)), <span class="at">scales=</span><span class="st">&quot;free&quot;</span>, <span class="at">space=</span><span class="st">&quot;free_x&quot;</span>, )</span></code></pre></div>
+<pre><code>## Warning: Removed 31 rows containing missing values (`geom_point()`).</code></pre>
+<p><img src="_main_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
+<p>Figure 6. Dissolved Oxygen concentrations in mg/L for the Delaware River for the 2018 to 2020 water years color coded by the position along the Delaware River in reference to the wetlands. Facet grid was used to separate water year and seasons into individual graphs.</p>
+</div>
+<div id="temperature" class="section level2 hasAnchor" number="4.7">
+<h2><span class="header-section-number">4.7</span> Temperature<a href="results.html#temperature" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Temperature was the highest during the summer months and reached the highest point at 28.8 degrees Celsius in July of 2020. The lowest reported temperature was in 2020 as well but in January at 0.2 degress Celsius.</p>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="results.html#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(Total_Data, <span class="fu">aes</span>(<span class="at">x =</span> month, <span class="at">y =</span> temp, <span class="at">col =</span> position)) <span class="sc">+</span></span>
+<span id="cb41-2"><a href="results.html#cb41-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
+<span id="cb41-3"><a href="results.html#cb41-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Temperature of Water in the Delaware River&quot;</span>, <span class="at">x =</span> <span class="st">&quot;Month&quot;</span>, <span class="at">y =</span> <span class="st">&quot;Temperature (deg C)&quot;</span>) <span class="sc">+</span></span>
+<span id="cb41-4"><a href="results.html#cb41-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">facet_grid</span>(water_year<span class="sc">~</span> <span class="fu">factor</span>(season, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">&quot;Fall&quot;</span>, <span class="st">&quot;Winter&quot;</span>, <span class="st">&quot;Spring&quot;</span>, <span class="st">&quot;Summer&quot;</span>)), <span class="at">scales=</span><span class="st">&quot;free&quot;</span>, <span class="at">space=</span><span class="st">&quot;free_x&quot;</span>, )</span></code></pre></div>
+<pre><code>## Warning: Removed 3 rows containing missing values (`geom_point()`).</code></pre>
+<p><img src="_main_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
+<p>Figure 7. Temperature of water in degrees Celsius for the Delaware River for the 2018 to 2020 water years color coded by the position along the Delaware River in reference to the wetlands. Facet grid was used to separate water year and seasons into individual graphs.</p>
+</div>
+<div id="ph" class="section level2 hasAnchor" number="4.8">
+<h2><span class="header-section-number">4.8</span> pH<a href="results.html#ph" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The average pH levels for the before wetlands sites were often higher than the in or after sites. pH reached it’s highest point at 9.12 in the before position in June for the 2018 water year. However, the pH reamined fairly neutral throughout all seasons and water year. The average pH in total was 7.3.</p>
+<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="results.html#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(Total_Data, <span class="fu">aes</span>(<span class="at">x =</span> month, <span class="at">y =</span> pH, <span class="at">col =</span> position)) <span class="sc">+</span></span>
+<span id="cb43-2"><a href="results.html#cb43-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
+<span id="cb43-3"><a href="results.html#cb43-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;pH of Water in the Delaware River&quot;</span>, <span class="at">x =</span> <span class="st">&quot;Month&quot;</span>, <span class="at">y =</span> <span class="st">&quot;pH&quot;</span>) <span class="sc">+</span></span>
+<span id="cb43-4"><a href="results.html#cb43-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">facet_grid</span>(water_year<span class="sc">~</span> <span class="fu">factor</span>(season, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">&quot;Fall&quot;</span>, <span class="st">&quot;Winter&quot;</span>, <span class="st">&quot;Spring&quot;</span>, <span class="st">&quot;Summer&quot;</span>)), <span class="at">scales=</span><span class="st">&quot;free&quot;</span>, <span class="at">space=</span><span class="st">&quot;free_x&quot;</span>, )</span></code></pre></div>
+<pre><code>## Warning: Removed 11 rows containing missing values (`geom_point()`).</code></pre>
+<p><img src="_main_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
+<p>Figure 8. pH for the Delaware River for the 2018 to 2020 water years color coded by the position along the Delaware River in reference to the wetlands. Facet grid was used to separate water year and seasons into individual graphs.</p>
+</div>
+<div id="correlation-of-parameter" class="section level2 hasAnchor" number="4.9">
+<h2><span class="header-section-number">4.9</span> Correlation of Parameter<a href="results.html#correlation-of-parameter" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>There was very little correlation between nitrate and the following parameters: dissolved oxygen, the temperature of water, pH, and nitrite concentrations. Furthermore, there was no correlation between nitrite, dissolved oxygen, temperature of water, and pH. The highest correlation was found between dissolved oxygen and temperature at -0.93. The second strongest correlation was -0.42 between nitrite and DO. This could be considered as a moderate negative correlation between the two measurements.</p>
+<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="results.html#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(psych)</span>
+<span id="cb45-2"><a href="results.html#cb45-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(reshape2)</span>
+<span id="cb45-3"><a href="results.html#cb45-3" aria-hidden="true" tabindex="-1"></a>cols <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Nitrate&quot;</span>, <span class="st">&quot;Nitrite&quot;</span>, <span class="st">&quot;DO&quot;</span>, <span class="st">&quot;temp&quot;</span>, <span class="st">&quot;pH&quot;</span>)</span>
+<span id="cb45-4"><a href="results.html#cb45-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-5"><a href="results.html#cb45-5" aria-hidden="true" tabindex="-1"></a><span class="co"># compute the correlation matrix for the selected columns</span></span>
+<span id="cb45-6"><a href="results.html#cb45-6" aria-hidden="true" tabindex="-1"></a>cor_df <span class="ot">&lt;-</span> <span class="fu">round</span>(<span class="fu">cor</span>(Total_Data[, cols], <span class="at">use =</span> <span class="st">&quot;pairwise.complete.obs&quot;</span>),<span class="dv">2</span>)</span>
+<span id="cb45-7"><a href="results.html#cb45-7" aria-hidden="true" tabindex="-1"></a>melted_cor <span class="ot">&lt;-</span> <span class="fu">melt</span>(cor_df)</span>
+<span id="cb45-8"><a href="results.html#cb45-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-9"><a href="results.html#cb45-9" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> melted_cor, <span class="fu">aes</span>(<span class="at">x=</span>Var1, <span class="at">y=</span>Var2, <span class="at">fill=</span>value)) <span class="sc">+</span> </span>
+<span id="cb45-10"><a href="results.html#cb45-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_tile</span>() <span class="sc">+</span></span>
+<span id="cb45-11"><a href="results.html#cb45-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(Var2, Var1, <span class="at">label =</span> value), <span class="at">size =</span> <span class="dv">5</span>) <span class="sc">+</span></span>
+<span id="cb45-12"><a href="results.html#cb45-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_gradient2</span>(<span class="at">low =</span> <span class="st">&quot;red&quot;</span>, <span class="at">high =</span> <span class="st">&quot;red4&quot;</span>,</span>
+<span id="cb45-13"><a href="results.html#cb45-13" aria-hidden="true" tabindex="-1"></a>                       <span class="at">limit =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">1</span>,<span class="dv">1</span>), <span class="at">name=</span><span class="st">&quot;Correlation&quot;</span>) <span class="sc">+</span></span>
+<span id="cb45-14"><a href="results.html#cb45-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.title.x =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb45-15"><a href="results.html#cb45-15" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.title.y =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb45-16"><a href="results.html#cb45-16" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.background =</span> <span class="fu">element_blank</span>())<span class="sc">+</span> </span>
+<span id="cb45-17"><a href="results.html#cb45-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Correlation of measured parameters&quot;</span>) </span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
+<p>Figure 9. Correlation graph of parameters studied (pH, DO, temp, pH, nitrate, and nitrite) for the Delaware River for the 2018 to 2020 water years. The darker red represents a high positive correlation while a brighter red show a strong negative correlation. White indicates that there is no correlation.</p>
 
+</div>
 </div>
             </section>
 

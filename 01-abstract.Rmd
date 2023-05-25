@@ -1,1 +1,5 @@
 # Abstract
+
+  This study aims to investigate the impact of freshwater/forested shrub wetlands in the Delaware River on nitrogen levels. Data was collected from three locations along the Delaware River, labeled as "before in" and "after." The data covers the period from October 2017 to September 2020 to account for the 2018, 2019, and 2020 water years. The collected data was analyzed to assess the impact of freshwater/forested shrub wetlands on nitrogen levels in the Delaware River. The results showed that there was a significant change in nitrate concentrations between the before and after positions as well as the before and in positions. There was no significant change between the in and after positions for nitrate. Nitrite concentrations experienced no significant changes throughout all the positions. Furthermore, there was no correlation between nitrate or nitrate and the other environmental factors of dissolved oxygen, pH, and temperature.
+
+ 

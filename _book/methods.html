@@ -4,39 +4,33 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 4 Methods | Bookdown Template</title>
-  <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
-The HTML output format for this example is bookdown::gitbook,
-set in the _output.yml file.</p>" />
-  <meta name="generator" content="bookdown 0.30 and GitBook 2.6.7" />
+  <title>Chapter 3 Methods | Nitrate and Nitrite Removal through Wetlands in the Delaware River</title>
+  <meta name="description" content="Chapter 3 Methods | Nitrate and Nitrite Removal through Wetlands in the Delaware River" />
+  <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 4 Methods | Bookdown Template" />
+  <meta property="og:title" content="Chapter 3 Methods | Nitrate and Nitrite Removal through Wetlands in the Delaware River" />
   <meta property="og:type" content="book" />
   
-  <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
-The HTML output format for this example is bookdown::gitbook,
-set in the _output.yml file.</p>" />
-  <meta name="github-repo" content="rstudio/bookdown-demo" />
+  
+  
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 4 Methods | Bookdown Template" />
+  <meta name="twitter:title" content="Chapter 3 Methods | Nitrate and Nitrite Removal through Wetlands in the Delaware River" />
   
-  <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
-The HTML output format for this example is bookdown::gitbook,
-set in the _output.yml file.</p>" />
+  
   
 
-<meta name="author" content="" />
+<meta name="author" content="Caz Bell" />
 
 
-<meta name="date" content="2023-04-04" />
+<meta name="date" content="2023-05-09" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="intro.html"/>
+<link rel="prev" href="introduction.html"/>
 <link rel="next" href="results.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -58,6 +52,20 @@ set in the _output.yml file.</p>" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.6.1/htmlwidgets.js"></script>
+<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding-2.1.1/leaflet.js"></script>
+<script src="libs/leaflet-providers-1.9.0/leaflet-providers_1.9.0.js"></script>
+<script src="libs/leaflet-providers-plugin-2.1.1/leaflet-providers-plugin.js"></script>
+<link href="libs/leaflet-awesomemarkers-2.0.3/leaflet.awesome-markers.css" rel="stylesheet" />
+<script src="libs/leaflet-awesomemarkers-2.0.3/leaflet.awesome-markers.min.js"></script>
+<link href="libs/bootstrap-3.3.7/bootstrap.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.7/bootstrap.min.js"></script>
 
 
 <style type="text/css">
@@ -125,28 +133,6 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
-<style type="text/css">
-/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}
-</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -164,16 +150,32 @@ div.csl-indent {
 <li><a href="./">A Minimal Book Example</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Overview</a>
+<li class="chapter" data-level="1" data-path="abstract.html"><a href="abstract.html"><i class="fa fa-check"></i><b>1</b> Abstract</a></li>
+<li class="chapter" data-level="2" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>2</b> Introduction</a></li>
+<li class="chapter" data-level="3" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>3</b> Methods</a>
 <ul>
-<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#render-book"><i class="fa fa-check"></i><b>1.1</b> Render book</a></li>
+<li class="chapter" data-level="3.1" data-path="methods.html"><a href="methods.html#data-collection"><i class="fa fa-check"></i><b>3.1</b> Data Collection</a></li>
+<li class="chapter" data-level="3.2" data-path="methods.html"><a href="methods.html#statistical-analysis"><i class="fa fa-check"></i><b>3.2</b> Statistical Analysis</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="abstract.html"><a href="abstract.html"><i class="fa fa-check"></i><b>2</b> Abstract</a></li>
-<li class="chapter" data-level="3" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>3</b> Intro</a></li>
-<li class="chapter" data-level="4" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>4</b> Methods</a></li>
-<li class="chapter" data-level="5" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>5</b> Results</a></li>
-<li class="chapter" data-level="6" data-path="discussion.html"><a href="discussion.html"><i class="fa fa-check"></i><b>6</b> Discussion</a></li>
-<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="4" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>4</b> Results</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="results.html"><a href="results.html#nitrate-concentrations"><i class="fa fa-check"></i><b>4.1</b> Nitrate Concentrations</a></li>
+<li class="chapter" data-level="4.2" data-path="results.html"><a href="results.html#nitrite-concentrations"><i class="fa fa-check"></i><b>4.2</b> Nitrite Concentrations</a></li>
+<li class="chapter" data-level="4.3" data-path="results.html"><a href="results.html#percent-change"><i class="fa fa-check"></i><b>4.3</b> Percent Change</a></li>
+<li class="chapter" data-level="4.4" data-path="results.html"><a href="results.html#anova-for-nitrate"><i class="fa fa-check"></i><b>4.4</b> ANOVA for Nitrate</a></li>
+<li class="chapter" data-level="4.5" data-path="results.html"><a href="results.html#anova-for-nitrite"><i class="fa fa-check"></i><b>4.5</b> ANOVA for Nitrite</a></li>
+<li class="chapter" data-level="4.6" data-path="results.html"><a href="results.html#dissolved-oxygen"><i class="fa fa-check"></i><b>4.6</b> Dissolved Oxygen</a></li>
+<li class="chapter" data-level="4.7" data-path="results.html"><a href="results.html#temperature"><i class="fa fa-check"></i><b>4.7</b> Temperature</a></li>
+<li class="chapter" data-level="4.8" data-path="results.html"><a href="results.html#ph"><i class="fa fa-check"></i><b>4.8</b> pH</a></li>
+<li class="chapter" data-level="4.9" data-path="results.html"><a href="results.html#correlation-of-parameter"><i class="fa fa-check"></i><b>4.9</b> Correlation of Parameter</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="discussion.html"><a href="discussion.html"><i class="fa fa-check"></i><b>5</b> Discussion</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="discussion.html"><a href="discussion.html#wetland-removal"><i class="fa fa-check"></i><b>5.1</b> Wetland Removal</a></li>
+<li class="chapter" data-level="5.2" data-path="discussion.html"><a href="discussion.html#environmental-factors"><i class="fa fa-check"></i><b>5.2</b> Environmental Factors</a></li>
+<li class="chapter" data-level="5.3" data-path="discussion.html"><a href="discussion.html#correlations"><i class="fa fa-check"></i><b>5.3</b> Correlations</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>6</b> References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -186,7 +188,7 @@ div.csl-indent {
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Bookdown Template</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Nitrate and Nitrite Removal through Wetlands in the Delaware River</a>
           </h1>
         </div>
 
@@ -194,16 +196,146 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="methods" class="section level1 hasAnchor" number="4">
-<h1><span class="header-section-number">Chapter 4</span> Methods<a href="methods.html#methods" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="methods" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Methods<a href="methods.html#methods" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="data-collection" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Data Collection<a href="methods.html#data-collection" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Data on water temperature, dissolved oxygen concentration, nitrate concentration, and nitrite concentration were collected from multiple sources using the waterqualitydata.us website for the Delaware River. The data sources included STORET, USGS, NWIS, and STEWARDS. The time for data collection was from October 2017 to September 2020, which covered the 2018, 2019, and 2020 water years. The data collected was used to analyze the impact of dissolved oxygen, pH, and temperature on nitrate and nitrite levels in wetlands. Furthermore, the location for this data was chosen by finding a wetland area mapped on the National Wetlands Inventory Wetlands Mapper. Multiple monitoring locations were selected and then merged into three resulting location parameters labeled “before”, “in”, and “after”. The “before” location means the monitoring locations appears before the major wetland area. The before locations can be found using the monitoring location identifiers “21PA_WQX-WQN0101” and “USGS-01463500”. The “in” location includes the monitoring location that is within the wetland area. The in location can be found using the monitoring location identifier “31DELRBC_WQX-332068”. Lastly, the final location, labeled “after” is downstream of the wetland area. The after location can be found using the monitoring location identifier “31DELRBC_WQX-332064”. The map below shows where the monitoring locations are on the Delaware River. Data on water temperature, dissolved oxygen concentration, nitrate concentration, and nitrite concentration were downloaded from waterqualitydata.us in CSV format and imported into R studio.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="methods.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggmap)</span>
+<span id="cb1-2"><a href="methods.html#cb1-2" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;locationdata.csv&quot;</span>)</span>
+<span id="cb1-3"><a href="methods.html#cb1-3" aria-hidden="true" tabindex="-1"></a>getColor <span class="ot">&lt;-</span> <span class="cf">function</span>(data) {</span>
+<span id="cb1-4"><a href="methods.html#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">sapply</span>(data<span class="sc">$</span>lat, <span class="cf">function</span>(lat) {</span>
+<span id="cb1-5"><a href="methods.html#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(lat <span class="sc">==</span> <span class="fl">40.2192</span>) {</span>
+<span id="cb1-6"><a href="methods.html#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;green&quot;</span></span>
+<span id="cb1-7"><a href="methods.html#cb1-7" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span>(lat <span class="sc">==</span> <span class="fl">40.22</span>) {</span>
+<span id="cb1-8"><a href="methods.html#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;green&quot;</span></span>
+<span id="cb1-9"><a href="methods.html#cb1-9" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span>(lat <span class="sc">==</span> <span class="fl">40.17</span>) {</span>
+<span id="cb1-10"><a href="methods.html#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;blue&quot;</span></span>
+<span id="cb1-11"><a href="methods.html#cb1-11" aria-hidden="true" tabindex="-1"></a>  }<span class="cf">else</span> {</span>
+<span id="cb1-12"><a href="methods.html#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;orange&quot;</span></span>
+<span id="cb1-13"><a href="methods.html#cb1-13" aria-hidden="true" tabindex="-1"></a>  } })</span>
+<span id="cb1-14"><a href="methods.html#cb1-14" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-15"><a href="methods.html#cb1-15" aria-hidden="true" tabindex="-1"></a>ai_colors <span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">&quot;green&quot;</span>,<span class="st">&quot;green&quot;</span>, <span class="st">&quot;blue&quot;</span>, <span class="st">&quot;orange&quot;</span>)</span>
+<span id="cb1-16"><a href="methods.html#cb1-16" aria-hidden="true" tabindex="-1"></a>icons <span class="ot">&lt;-</span> <span class="fu">awesomeIcons</span>(</span>
+<span id="cb1-17"><a href="methods.html#cb1-17" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="st">&#39;ios-close&#39;</span>,</span>
+<span id="cb1-18"><a href="methods.html#cb1-18" aria-hidden="true" tabindex="-1"></a>  <span class="at">iconColor =</span> <span class="st">&#39;black&#39;</span>,</span>
+<span id="cb1-19"><a href="methods.html#cb1-19" aria-hidden="true" tabindex="-1"></a>  <span class="at">markerColor =</span> <span class="fu">getColor</span>(data)</span>
+<span id="cb1-20"><a href="methods.html#cb1-20" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-21"><a href="methods.html#cb1-21" aria-hidden="true" tabindex="-1"></a>data <span class="sc">%&gt;%</span></span>
+<span id="cb1-22"><a href="methods.html#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="fu">leaflet</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb1-23"><a href="methods.html#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="fu">addProviderTiles</span>(providers<span class="sc">$</span>Esri.WorldImagery, <span class="at">group =</span> <span class="st">&quot;World Imagery&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb1-24"><a href="methods.html#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="fu">addProviderTiles</span>(providers<span class="sc">$</span>Esri.WorldTopoMap, <span class="at">group =</span> <span class="st">&quot;World Topo Map&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb1-25"><a href="methods.html#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="fu">addLayersControl</span>(<span class="at">baseGroups =</span> <span class="fu">c</span>(<span class="st">&quot;World Topo Map&quot;</span>, <span class="st">&quot;World Imagery&quot;</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb1-26"><a href="methods.html#cb1-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addAwesomeMarkers</span>(<span class="at">label =</span> <span class="sc">~</span>data<span class="sc">$</span>MonitoringLocation, <span class="at">icon =</span> icons,</span>
+<span id="cb1-27"><a href="methods.html#cb1-27" aria-hidden="true" tabindex="-1"></a>            <span class="at">labelOptions =</span> <span class="fu">labelOptions</span>(<span class="at">textOnly =</span> <span class="cn">TRUE</span>, <span class="at">textsize =</span>  <span class="dv">12</span>),</span>
+<span id="cb1-28"><a href="methods.html#cb1-28" aria-hidden="true" tabindex="-1"></a>             <span class="at">popup =</span> <span class="sc">~</span><span class="fu">htmlEscape</span>(data<span class="sc">$</span>MonitoringLocation)) <span class="sc">%&gt;%</span></span>
+<span id="cb1-29"><a href="methods.html#cb1-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addLegend</span>( <span class="at">position =</span> <span class="st">&quot;topleft&quot;</span>, <span class="at">title=</span><span class="st">&quot;Delaware River Wetlands Monitoring Location&quot;</span>, <span class="at">colors =</span> ai_colors, <span class="at">labels =</span> </span>
+<span id="cb1-30"><a href="methods.html#cb1-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unique</span>(data<span class="sc">$</span>Position)) <span class="sc">%&gt;%</span></span>
+<span id="cb1-31"><a href="methods.html#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="fu">setView</span>(<span class="at">lat =</span> <span class="fl">40.174465</span>, <span class="at">lng =</span> <span class="sc">-</span><span class="fl">74.734848</span>, <span class="at">zoom =</span> <span class="dv">10</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb1-32"><a href="methods.html#cb1-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addScaleBar</span>(</span>
+<span id="cb1-33"><a href="methods.html#cb1-33" aria-hidden="true" tabindex="-1"></a>  <span class="at">position =</span> <span class="st">&quot;bottomright&quot;</span>,</span>
+<span id="cb1-34"><a href="methods.html#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-35"><a href="methods.html#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="fu">scaleBarOptions</span>(</span>
+<span id="cb1-36"><a href="methods.html#cb1-36" aria-hidden="true" tabindex="-1"></a>  <span class="at">maxWidth =</span> <span class="dv">200</span>,</span>
+<span id="cb1-37"><a href="methods.html#cb1-37" aria-hidden="true" tabindex="-1"></a>  <span class="at">metric =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb1-38"><a href="methods.html#cb1-38" aria-hidden="true" tabindex="-1"></a>  <span class="at">imperial =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb1-39"><a href="methods.html#cb1-39" aria-hidden="true" tabindex="-1"></a>  <span class="at">updateWhenIdle =</span> <span class="cn">TRUE</span>)) </span></code></pre></div>
+<pre><code>## Assuming &quot;long&quot; and &quot;lat&quot; are longitude and latitude, respectively</code></pre>
+<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-6559f005d8b772799f82" style="width:672px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-6559f005d8b772799f82">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"World Imagery",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["Esri.WorldTopoMap",null,"World Topo Map",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addLayersControl","args":[["World Topo Map","World Imagery"],[],{"collapsed":true,"autoZIndex":true,"position":"topright"}]},{"method":"addAwesomeMarkers","args":[[40.2192,40.22,40.17,40.127648],[-74.7783,-74.77805,-74.734848,-74.815065],{"icon":"ios-close","markerColor":["green","green","blue","orange"],"iconColor":"black","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","prefix":"glyphicon"},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["21PA_WQX-WQN0101","USGS-01463500","31DELRBC_WQX-332068","31DELRBC_WQX-332064"],null,null,null,["21PA_WQX-WQN0101","USGS-01463500","31DELRBC_WQX-332068","31DELRBC_WQX-332064"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":12,"textOnly":true,"className":"","sticky":true},null]},{"method":"addLegend","args":[{"colors":["green","green","blue","orange"],"labels":["Before","Before ","In","After"],"na_color":null,"na_label":"NA","opacity":0.5,"position":"topleft","type":"unknown","title":"Delaware River Wetlands Monitoring Location","extra":null,"layerId":null,"className":"info legend","group":null}]},{"method":"addScaleBar","args":[{"maxWidth":200,"metric":true,"imperial":true,"updateWhenIdle":true,"position":"bottomright"}]}],"limits":{"lat":[40.127648,40.22],"lng":[-74.815065,-74.734848]},"setView":[[40.174465,-74.734848],10,[]]},"evals":[],"jsHooks":[]}</script>
+<p>Figure 1. Interactive map of the Delaware River with location monitoring stations colored by their positions, before, in, and after. By hovering over the location markers, the monitoring location indetfier appears.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="methods.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#before the wetlands area files</span></span>
+<span id="cb3-2"><a href="methods.html#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="methods.html#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="methods.html#cb3-4" aria-hidden="true" tabindex="-1"></a>before_wetlands <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&#39;before/before.csv&#39;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb3-5"><a href="methods.html#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(ActivityStartDate, CharacteristicName, ResultMeasureValue) <span class="sc">%&gt;%</span> </span>
+<span id="cb3-6"><a href="methods.html#cb3-6" aria-hidden="true" tabindex="-1"></a>        <span class="fu">rename</span>(<span class="st">&quot;Date&quot;</span> <span class="ot">=</span> <span class="st">&quot;ActivityStartDate&quot;</span>, </span>
+<span id="cb3-7"><a href="methods.html#cb3-7" aria-hidden="true" tabindex="-1"></a>               <span class="st">&quot;Nutrient&quot;</span> <span class="ot">=</span> <span class="st">&#39;CharacteristicName&#39;</span>,</span>
+<span id="cb3-8"><a href="methods.html#cb3-8" aria-hidden="true" tabindex="-1"></a>               <span class="st">&#39;Result&#39;</span> <span class="ot">=</span> <span class="st">&#39;ResultMeasureValue&#39;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb3-9"><a href="methods.html#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">na.omit</span>()</span>
+<span id="cb3-10"><a href="methods.html#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co">#add date, year, month, change the month column to abbreviation, add water years, and add seasons  to before wetlands data frame</span></span>
+<span id="cb3-11"><a href="methods.html#cb3-11" aria-hidden="true" tabindex="-1"></a>before_wetlands<span class="sc">$</span>Date <span class="ot">&lt;-</span> <span class="fu">mdy</span>(before_wetlands<span class="sc">$</span>Date)</span>
+<span id="cb3-12"><a href="methods.html#cb3-12" aria-hidden="true" tabindex="-1"></a>before_wetlands<span class="sc">$</span>year <span class="ot">&lt;-</span> <span class="fu">year</span>(before_wetlands<span class="sc">$</span>Date)</span>
+<span id="cb3-13"><a href="methods.html#cb3-13" aria-hidden="true" tabindex="-1"></a>before_wetlands<span class="sc">$</span>month <span class="ot">&lt;-</span> <span class="fu">month</span>(before_wetlands<span class="sc">$</span>Date)</span>
+<span id="cb3-14"><a href="methods.html#cb3-14" aria-hidden="true" tabindex="-1"></a>before_wetlands <span class="ot">&lt;-</span> before_wetlands <span class="sc">%&gt;%</span></span>
+<span id="cb3-15"><a href="methods.html#cb3-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">month =</span> month.abb[month])</span>
+<span id="cb3-16"><a href="methods.html#cb3-16" aria-hidden="true" tabindex="-1"></a>before_wetlands<span class="sc">$</span>water_year <span class="ot">&lt;-</span> <span class="fu">year</span>(before_wetlands<span class="sc">$</span>Date) <span class="sc">+</span> <span class="fu">ifelse</span>(<span class="fu">month</span>(before_wetlands<span class="sc">$</span>Date) <span class="sc">&gt;=</span> <span class="dv">10</span>, <span class="dv">1</span>, <span class="dv">0</span>)</span>
+<span id="cb3-17"><a href="methods.html#cb3-17" aria-hidden="true" tabindex="-1"></a>before_wetlands<span class="sc">$</span>season <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(before_wetlands<span class="sc">$</span>month <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;Dec&quot;</span>, <span class="st">&quot;Jan&quot;</span>, <span class="st">&quot;Feb&quot;</span>), <span class="st">&quot;Winter&quot;</span>,</span>
+<span id="cb3-18"><a href="methods.html#cb3-18" aria-hidden="true" tabindex="-1"></a>                        <span class="fu">ifelse</span>(before_wetlands<span class="sc">$</span>month <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;Mar&quot;</span>, <span class="st">&quot;Apr&quot;</span>, <span class="st">&quot;May&quot;</span>), <span class="st">&quot;Spring&quot;</span>,</span>
+<span id="cb3-19"><a href="methods.html#cb3-19" aria-hidden="true" tabindex="-1"></a>                               <span class="fu">ifelse</span>(before_wetlands<span class="sc">$</span>month <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;Jun&quot;</span>, <span class="st">&quot;Jul&quot;</span>, <span class="st">&quot;Aug&quot;</span>), <span class="st">&quot;Summer&quot;</span>,</span>
+<span id="cb3-20"><a href="methods.html#cb3-20" aria-hidden="true" tabindex="-1"></a>                                      <span class="fu">ifelse</span>(before_wetlands<span class="sc">$</span>month <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;Sep&quot;</span>, <span class="st">&quot;Oct&quot;</span>, <span class="st">&quot;Nov&quot;</span>), <span class="st">&quot;Fall&quot;</span>, <span class="cn">NA</span>))))</span>
+<span id="cb3-21"><a href="methods.html#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="co">#add position column</span></span>
+<span id="cb3-22"><a href="methods.html#cb3-22" aria-hidden="true" tabindex="-1"></a>before_season <span class="ot">&lt;-</span> before_wetlands <span class="sc">%&gt;%</span></span>
+<span id="cb3-23"><a href="methods.html#cb3-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Nutrient, water_year, season) <span class="sc">%&gt;%</span></span>
+<span id="cb3-24"><a href="methods.html#cb3-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">position =</span> <span class="fu">rep</span>(<span class="st">&#39;before&#39;</span>))</span>
+<span id="cb3-25"><a href="methods.html#cb3-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-26"><a href="methods.html#cb3-26" aria-hidden="true" tabindex="-1"></a><span class="co"># adter wetlands files </span></span>
+<span id="cb3-27"><a href="methods.html#cb3-27" aria-hidden="true" tabindex="-1"></a>after_wetlands <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&#39;after/Bend.csv&#39;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb3-28"><a href="methods.html#cb3-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(ActivityStartDate, CharacteristicName, ResultMeasureValue) <span class="sc">%&gt;%</span> </span>
+<span id="cb3-29"><a href="methods.html#cb3-29" aria-hidden="true" tabindex="-1"></a>        <span class="fu">rename</span>(<span class="st">&quot;Date&quot;</span> <span class="ot">=</span> <span class="st">&quot;ActivityStartDate&quot;</span>, </span>
+<span id="cb3-30"><a href="methods.html#cb3-30" aria-hidden="true" tabindex="-1"></a>               <span class="st">&quot;Nutrient&quot;</span> <span class="ot">=</span> <span class="st">&#39;CharacteristicName&#39;</span>,</span>
+<span id="cb3-31"><a href="methods.html#cb3-31" aria-hidden="true" tabindex="-1"></a>               <span class="st">&#39;Result&#39;</span> <span class="ot">=</span> <span class="st">&#39;ResultMeasureValue&#39;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb3-32"><a href="methods.html#cb3-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">na.omit</span>()</span>
+<span id="cb3-33"><a href="methods.html#cb3-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-34"><a href="methods.html#cb3-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-35"><a href="methods.html#cb3-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-36"><a href="methods.html#cb3-36" aria-hidden="true" tabindex="-1"></a><span class="co">#add date, year, month, change the month column to abbreviation, add water years, and add seasons  to after wetlands data frame</span></span>
+<span id="cb3-37"><a href="methods.html#cb3-37" aria-hidden="true" tabindex="-1"></a>after_wetlands<span class="sc">$</span>Date <span class="ot">&lt;-</span> <span class="fu">mdy</span>(after_wetlands<span class="sc">$</span>Date)</span>
+<span id="cb3-38"><a href="methods.html#cb3-38" aria-hidden="true" tabindex="-1"></a>after_wetlands<span class="sc">$</span>year <span class="ot">&lt;-</span> <span class="fu">year</span>(after_wetlands<span class="sc">$</span>Date)</span>
+<span id="cb3-39"><a href="methods.html#cb3-39" aria-hidden="true" tabindex="-1"></a>after_wetlands<span class="sc">$</span>month <span class="ot">&lt;-</span> <span class="fu">month</span>(after_wetlands<span class="sc">$</span>Date) </span>
+<span id="cb3-40"><a href="methods.html#cb3-40" aria-hidden="true" tabindex="-1"></a>after_wetlands <span class="ot">&lt;-</span> after_wetlands <span class="sc">%&gt;%</span></span>
+<span id="cb3-41"><a href="methods.html#cb3-41" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">month =</span> month.abb[month])</span>
+<span id="cb3-42"><a href="methods.html#cb3-42" aria-hidden="true" tabindex="-1"></a>after_wetlands<span class="sc">$</span>water_year <span class="ot">&lt;-</span> <span class="fu">year</span>(after_wetlands<span class="sc">$</span>Date) <span class="sc">+</span> <span class="fu">ifelse</span>(<span class="fu">month</span>(after_wetlands<span class="sc">$</span>Date) <span class="sc">&gt;=</span> <span class="dv">10</span>, <span class="dv">1</span>, <span class="dv">0</span>)</span>
+<span id="cb3-43"><a href="methods.html#cb3-43" aria-hidden="true" tabindex="-1"></a>after_wetlands<span class="sc">$</span>season <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(after_wetlands<span class="sc">$</span>month <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;Dec&quot;</span>, <span class="st">&quot;Jan&quot;</span>, <span class="st">&quot;Feb&quot;</span>), <span class="st">&quot;Winter&quot;</span>,</span>
+<span id="cb3-44"><a href="methods.html#cb3-44" aria-hidden="true" tabindex="-1"></a>                        <span class="fu">ifelse</span>(after_wetlands<span class="sc">$</span>month <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;Mar&quot;</span>, <span class="st">&quot;Apr&quot;</span>, <span class="st">&quot;May&quot;</span>), <span class="st">&quot;Spring&quot;</span>,</span>
+<span id="cb3-45"><a href="methods.html#cb3-45" aria-hidden="true" tabindex="-1"></a>                               <span class="fu">ifelse</span>(after_wetlands<span class="sc">$</span>month <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;Jun&quot;</span>, <span class="st">&quot;Jul&quot;</span>, <span class="st">&quot;Aug&quot;</span>), <span class="st">&quot;Summer&quot;</span>,</span>
+<span id="cb3-46"><a href="methods.html#cb3-46" aria-hidden="true" tabindex="-1"></a>                                     <span class="fu">ifelse</span>(after_wetlands<span class="sc">$</span>month <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;Sep&quot;</span>, <span class="st">&quot;Oct&quot;</span>, <span class="st">&quot;Nov&quot;</span>), <span class="st">&quot;Fall&quot;</span>, <span class="cn">NA</span>))))</span>
+<span id="cb3-47"><a href="methods.html#cb3-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-48"><a href="methods.html#cb3-48" aria-hidden="true" tabindex="-1"></a><span class="co">#add position column</span></span>
+<span id="cb3-49"><a href="methods.html#cb3-49" aria-hidden="true" tabindex="-1"></a>after_season <span class="ot">&lt;-</span> after_wetlands <span class="sc">%&gt;%</span></span>
+<span id="cb3-50"><a href="methods.html#cb3-50" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Nutrient, water_year, season) <span class="sc">%&gt;%</span></span>
+<span id="cb3-51"><a href="methods.html#cb3-51" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">position =</span> <span class="fu">rep</span>(<span class="st">&#39;after&#39;</span>))</span>
+<span id="cb3-52"><a href="methods.html#cb3-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-53"><a href="methods.html#cb3-53" aria-hidden="true" tabindex="-1"></a><span class="co">#read in before wetland files</span></span>
+<span id="cb3-54"><a href="methods.html#cb3-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-55"><a href="methods.html#cb3-55" aria-hidden="true" tabindex="-1"></a>in_wetlands <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&#39;in/in.csv&#39;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb3-56"><a href="methods.html#cb3-56" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(ActivityStartDate, CharacteristicName, ResultMeasureValue) <span class="sc">%&gt;%</span> </span>
+<span id="cb3-57"><a href="methods.html#cb3-57" aria-hidden="true" tabindex="-1"></a>        <span class="fu">rename</span>(<span class="st">&quot;Date&quot;</span> <span class="ot">=</span> <span class="st">&quot;ActivityStartDate&quot;</span>, </span>
+<span id="cb3-58"><a href="methods.html#cb3-58" aria-hidden="true" tabindex="-1"></a>               <span class="st">&quot;Nutrient&quot;</span> <span class="ot">=</span> <span class="st">&#39;CharacteristicName&#39;</span>,</span>
+<span id="cb3-59"><a href="methods.html#cb3-59" aria-hidden="true" tabindex="-1"></a>               <span class="st">&#39;Result&#39;</span> <span class="ot">=</span> <span class="st">&#39;ResultMeasureValue&#39;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb3-60"><a href="methods.html#cb3-60" aria-hidden="true" tabindex="-1"></a>  <span class="fu">na.omit</span>()</span>
+<span id="cb3-61"><a href="methods.html#cb3-61" aria-hidden="true" tabindex="-1"></a><span class="co">#add date, year, month, change the month column to abbreviation, add water years, and add seasons  to in wetlands data frame</span></span>
+<span id="cb3-62"><a href="methods.html#cb3-62" aria-hidden="true" tabindex="-1"></a>in_wetlands<span class="sc">$</span>Date <span class="ot">&lt;-</span> <span class="fu">mdy</span>(in_wetlands<span class="sc">$</span>Date)</span>
+<span id="cb3-63"><a href="methods.html#cb3-63" aria-hidden="true" tabindex="-1"></a>in_wetlands<span class="sc">$</span>year <span class="ot">&lt;-</span> <span class="fu">year</span>(in_wetlands<span class="sc">$</span>Date)</span>
+<span id="cb3-64"><a href="methods.html#cb3-64" aria-hidden="true" tabindex="-1"></a>in_wetlands<span class="sc">$</span>month <span class="ot">&lt;-</span> <span class="fu">month</span>(in_wetlands<span class="sc">$</span>Date) </span>
+<span id="cb3-65"><a href="methods.html#cb3-65" aria-hidden="true" tabindex="-1"></a>in_wetlands <span class="ot">&lt;-</span> in_wetlands <span class="sc">%&gt;%</span></span>
+<span id="cb3-66"><a href="methods.html#cb3-66" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">month =</span> month.abb[month])</span>
+<span id="cb3-67"><a href="methods.html#cb3-67" aria-hidden="true" tabindex="-1"></a>in_wetlands<span class="sc">$</span>water_year <span class="ot">&lt;-</span> <span class="fu">year</span>(in_wetlands<span class="sc">$</span>Date) <span class="sc">+</span> <span class="fu">ifelse</span>(<span class="fu">month</span>(in_wetlands<span class="sc">$</span>Date) <span class="sc">&gt;=</span> <span class="dv">10</span>, <span class="dv">1</span>, <span class="dv">0</span>)</span>
+<span id="cb3-68"><a href="methods.html#cb3-68" aria-hidden="true" tabindex="-1"></a>in_wetlands<span class="sc">$</span>season <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(in_wetlands<span class="sc">$</span>month <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;Dec&quot;</span>, <span class="st">&quot;Jan&quot;</span>, <span class="st">&quot;Feb&quot;</span>), <span class="st">&quot;Winter&quot;</span>,</span>
+<span id="cb3-69"><a href="methods.html#cb3-69" aria-hidden="true" tabindex="-1"></a>                        <span class="fu">ifelse</span>(in_wetlands<span class="sc">$</span>month <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;Mar&quot;</span>, <span class="st">&quot;Apr&quot;</span>, <span class="st">&quot;May&quot;</span>), <span class="st">&quot;Spring&quot;</span>,</span>
+<span id="cb3-70"><a href="methods.html#cb3-70" aria-hidden="true" tabindex="-1"></a>                               <span class="fu">ifelse</span>(in_wetlands<span class="sc">$</span>month <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;Jun&quot;</span>, <span class="st">&quot;Jul&quot;</span>, <span class="st">&quot;Aug&quot;</span>), <span class="st">&quot;Summer&quot;</span>,</span>
+<span id="cb3-71"><a href="methods.html#cb3-71" aria-hidden="true" tabindex="-1"></a>                                      <span class="fu">ifelse</span>(in_wetlands<span class="sc">$</span>month <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;Sep&quot;</span>, <span class="st">&quot;Oct&quot;</span>, <span class="st">&quot;Nov&quot;</span>), <span class="st">&quot;Fall&quot;</span>, <span class="cn">NA</span>))))</span>
+<span id="cb3-72"><a href="methods.html#cb3-72" aria-hidden="true" tabindex="-1"></a><span class="co">#add position column </span></span>
+<span id="cb3-73"><a href="methods.html#cb3-73" aria-hidden="true" tabindex="-1"></a>in_season <span class="ot">&lt;-</span> in_wetlands <span class="sc">%&gt;%</span></span>
+<span id="cb3-74"><a href="methods.html#cb3-74" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Nutrient, water_year, season) <span class="sc">%&gt;%</span></span>
+<span id="cb3-75"><a href="methods.html#cb3-75" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">position =</span> <span class="fu">rep</span>(<span class="st">&#39;in&#39;</span>))</span>
+<span id="cb3-76"><a href="methods.html#cb3-76" aria-hidden="true" tabindex="-1"></a><span class="co">#combine before, after, and in wetlands data frames into 1 data frame</span></span>
+<span id="cb3-77"><a href="methods.html#cb3-77" aria-hidden="true" tabindex="-1"></a>Total_Data_new <span class="ot">&lt;-</span> <span class="fu">rbind</span>(before_season, after_season, in_season) <span class="sc">%&gt;%</span></span>
+<span id="cb3-78"><a href="methods.html#cb3-78" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">water_year =</span> <span class="fu">as.factor</span>(water_year)) </span>
+<span id="cb3-79"><a href="methods.html#cb3-79" aria-hidden="true" tabindex="-1"></a>Total_Data <span class="ot">&lt;-</span> <span class="fu">pivot_wider</span>(Total_Data_new, <span class="at">names_from =</span> Nutrient, <span class="at">values_from =</span> Result, <span class="at">values_fn =</span> {mean})</span></code></pre></div>
+</div>
+<div id="statistical-analysis" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Statistical Analysis<a href="methods.html#statistical-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The data was downloaded as CSV files and imported into R studio. From there, monthly average were created for each nutrient and environmental factor based on the location. To analyze the variation in nitrate and nitrite concentrations by position, water year, and season, a bar graph was generated using the ggplot2 package in R. To determine the correlations between different water parameters, a correlation heat map was generated using the ggplot package in R. The graph showed the correlation coefficients between nitrate, nitrite, DO, temperature, and pH. An ANOVA test was conducted to analyze the variation in nitrate and nitrite concentrations by year. The nitrate and nitrite concentrations were analyzed using the aov function in R. The significance level was set at p &lt; 0.05. Post-hoc tests (Tukey HSD) were conducted to determine significant differences between individual positions. Furthermore, the percent change between the locations was found and graphed using the ggplot package in R studio.</p>
 
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="intro.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="introduction.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="results.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>

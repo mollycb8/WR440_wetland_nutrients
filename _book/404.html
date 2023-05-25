@@ -4,32 +4,26 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page not found | Bookdown Template</title>
-  <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
-The HTML output format for this example is bookdown::gitbook,
-set in the _output.yml file.</p>" />
-  <meta name="generator" content="bookdown 0.30 and GitBook 2.6.7" />
+  <title>Page not found | Nitrate and Nitrite Removal through Wetlands in the Delaware River</title>
+  <meta name="description" content="Page not found | Nitrate and Nitrite Removal through Wetlands in the Delaware River" />
+  <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Page not found | Bookdown Template" />
+  <meta property="og:title" content="Page not found | Nitrate and Nitrite Removal through Wetlands in the Delaware River" />
   <meta property="og:type" content="book" />
   
-  <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
-The HTML output format for this example is bookdown::gitbook,
-set in the _output.yml file.</p>" />
-  <meta name="github-repo" content="rstudio/bookdown-demo" />
+  
+  
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Page not found | Bookdown Template" />
+  <meta name="twitter:title" content="Page not found | Nitrate and Nitrite Removal through Wetlands in the Delaware River" />
   
-  <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
-The HTML output format for this example is bookdown::gitbook,
-set in the _output.yml file.</p>" />
+  
   
 
-<meta name="author" content="" />
+<meta name="author" content="Caz Bell" />
 
 
-<meta name="date" content="2023-04-04" />
+<meta name="date" content="2023-05-09" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -58,6 +52,20 @@ set in the _output.yml file.</p>" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.6.1/htmlwidgets.js"></script>
+<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding-2.1.1/leaflet.js"></script>
+<script src="libs/leaflet-providers-1.9.0/leaflet-providers_1.9.0.js"></script>
+<script src="libs/leaflet-providers-plugin-2.1.1/leaflet-providers-plugin.js"></script>
+<link href="libs/leaflet-awesomemarkers-2.0.3/leaflet.awesome-markers.css" rel="stylesheet" />
+<script src="libs/leaflet-awesomemarkers-2.0.3/leaflet.awesome-markers.min.js"></script>
+<link href="libs/bootstrap-3.3.7/bootstrap.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.7/bootstrap.min.js"></script>
 
 
 <style type="text/css">
@@ -125,28 +133,6 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
-<style type="text/css">
-/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}
-</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -164,16 +150,32 @@ div.csl-indent {
 <li><a href="./">A Minimal Book Example</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Overview</a>
+<li class="chapter" data-level="1" data-path="abstract.html"><a href="abstract.html"><i class="fa fa-check"></i><b>1</b> Abstract</a></li>
+<li class="chapter" data-level="2" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>2</b> Introduction</a></li>
+<li class="chapter" data-level="3" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>3</b> Methods</a>
 <ul>
-<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#render-book"><i class="fa fa-check"></i><b>1.1</b> Render book</a></li>
+<li class="chapter" data-level="3.1" data-path="methods.html"><a href="methods.html#data-collection"><i class="fa fa-check"></i><b>3.1</b> Data Collection</a></li>
+<li class="chapter" data-level="3.2" data-path="methods.html"><a href="methods.html#statistical-analysis"><i class="fa fa-check"></i><b>3.2</b> Statistical Analysis</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="abstract.html"><a href="abstract.html"><i class="fa fa-check"></i><b>2</b> Abstract</a></li>
-<li class="chapter" data-level="3" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>3</b> Intro</a></li>
-<li class="chapter" data-level="4" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>4</b> Methods</a></li>
-<li class="chapter" data-level="5" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>5</b> Results</a></li>
-<li class="chapter" data-level="6" data-path="discussion.html"><a href="discussion.html"><i class="fa fa-check"></i><b>6</b> Discussion</a></li>
-<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="4" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>4</b> Results</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="results.html"><a href="results.html#nitrate-concentrations"><i class="fa fa-check"></i><b>4.1</b> Nitrate Concentrations</a></li>
+<li class="chapter" data-level="4.2" data-path="results.html"><a href="results.html#nitrite-concentrations"><i class="fa fa-check"></i><b>4.2</b> Nitrite Concentrations</a></li>
+<li class="chapter" data-level="4.3" data-path="results.html"><a href="results.html#percent-change"><i class="fa fa-check"></i><b>4.3</b> Percent Change</a></li>
+<li class="chapter" data-level="4.4" data-path="results.html"><a href="results.html#anova-for-nitrate"><i class="fa fa-check"></i><b>4.4</b> ANOVA for Nitrate</a></li>
+<li class="chapter" data-level="4.5" data-path="results.html"><a href="results.html#anova-for-nitrite"><i class="fa fa-check"></i><b>4.5</b> ANOVA for Nitrite</a></li>
+<li class="chapter" data-level="4.6" data-path="results.html"><a href="results.html#dissolved-oxygen"><i class="fa fa-check"></i><b>4.6</b> Dissolved Oxygen</a></li>
+<li class="chapter" data-level="4.7" data-path="results.html"><a href="results.html#temperature"><i class="fa fa-check"></i><b>4.7</b> Temperature</a></li>
+<li class="chapter" data-level="4.8" data-path="results.html"><a href="results.html#ph"><i class="fa fa-check"></i><b>4.8</b> pH</a></li>
+<li class="chapter" data-level="4.9" data-path="results.html"><a href="results.html#correlation-of-parameter"><i class="fa fa-check"></i><b>4.9</b> Correlation of Parameter</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="discussion.html"><a href="discussion.html"><i class="fa fa-check"></i><b>5</b> Discussion</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="discussion.html"><a href="discussion.html#wetland-removal"><i class="fa fa-check"></i><b>5.1</b> Wetland Removal</a></li>
+<li class="chapter" data-level="5.2" data-path="discussion.html"><a href="discussion.html#environmental-factors"><i class="fa fa-check"></i><b>5.2</b> Environmental Factors</a></li>
+<li class="chapter" data-level="5.3" data-path="discussion.html"><a href="discussion.html#correlations"><i class="fa fa-check"></i><b>5.3</b> Correlations</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>6</b> References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -186,7 +188,7 @@ div.csl-indent {
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Bookdown Template</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Nitrate and Nitrite Removal through Wetlands in the Delaware River</a>
           </h1>
         </div>
 

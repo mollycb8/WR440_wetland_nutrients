@@ -1,1 +1,167 @@
 # Methods
+
+## Data Collection
+
+
+```{r g, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dataRetrieval)
+library(lubridate)
+library(tidyverse)
+library(feather)
+library(plotly)
+library(dplyr)
+library(tmap)
+library(leaflet)
+library(sf)
+library(htmltools)
+library(magrittr)
+library(readr)
+library(readxl)
+library(tidyr)
+library(plotly)
+library(ggplot2)
+library(ionr)
+library(sf)
+library(RColorBrewer)
+library(ggmap)
+```
+
+  Data on water temperature, dissolved oxygen concentration, nitrate concentration, and nitrite concentration were collected from multiple sources using the waterqualitydata.us website for the Delaware River. The data sources included STORET, USGS, NWIS, and STEWARDS. The time for data collection was from October 2017 to September 2020, which covered the 2018, 2019, and 2020 water years. The data collected was used to analyze the impact of dissolved oxygen, pH, and temperature on nitrate and nitrite levels in wetlands. Furthermore, the location for this data was chosen by finding a wetland area mapped on the National Wetlands Inventory Wetlands Mapper. Multiple monitoring locations were selected and then merged into three resulting location parameters labeled “before”, “in”, and “after”. The “before” location means the monitoring locations appears before the major wetland area. The before locations can be found using the monitoring location identifiers “21PA_WQX-WQN0101” and “USGS-01463500”. The “in” location includes the monitoring location that is within the wetland area. The in location can be found using the monitoring location identifier “31DELRBC_WQX-332068”. Lastly, the final location, labeled “after” is downstream of the wetland area. The after location can be found using the monitoring location identifier “31DELRBC_WQX-332064”. The map below shows where the monitoring locations are on the Delaware River. Data on water temperature, dissolved oxygen concentration, nitrate concentration, and nitrite concentration were downloaded from waterqualitydata.us in CSV format and imported into R studio. 
+
+```{r}
+
+library(ggmap)
+data <- read.csv("locationdata.csv")
+getColor <- function(data) {
+  sapply(data$lat, function(lat) {
+  if(lat == 40.2192) {
+    "green"
+  } else if(lat == 40.22) {
+    "green"
+  } else if(lat == 40.17) {
+    "blue"
+  }else {
+    "orange"
+  } })
+}
+ai_colors <-c("green","green", "blue", "orange")
+icons <- awesomeIcons(
+  icon = 'ios-close',
+  iconColor = 'black',
+  markerColor = getColor(data)
+)
+data %>%
+leaflet() %>%
+addProviderTiles(providers$Esri.WorldImagery, group = "World Imagery") %>%
+addProviderTiles(providers$Esri.WorldTopoMap, group = "World Topo Map") %>%
+addLayersControl(baseGroups = c("World Topo Map", "World Imagery")) %>%
+  addAwesomeMarkers(label = ~data$MonitoringLocation, icon = icons,
+            labelOptions = labelOptions(textOnly = TRUE, textsize =  12),
+             popup = ~htmlEscape(data$MonitoringLocation)) %>%
+  addLegend( position = "topleft", title="Delaware River Wetlands Monitoring Location", colors = ai_colors, labels = 
+  unique(data$Position)) %>%
+setView(lat = 40.174465, lng = -74.734848, zoom = 10) %>%
+  addScaleBar(
+  position = "bottomright",
+
+scaleBarOptions(
+  maxWidth = 200,
+  metric = TRUE,
+  imperial = TRUE,
+  updateWhenIdle = TRUE)) 
+
+```
+Figure 1. Interactive map of the Delaware River with location monitoring stations colored by their positions, before, in, and after. By hovering over the location markers, the monitoring location indetfier appears. 
+
+```{r}
+#before the wetlands area files
+
+
+before_wetlands <- read.csv('before/before.csv') %>%
+  select(ActivityStartDate, CharacteristicName, ResultMeasureValue) %>% 
+        rename("Date" = "ActivityStartDate", 
+               "Nutrient" = 'CharacteristicName',
+               'Result' = 'ResultMeasureValue') %>%
+  na.omit()
+#add date, year, month, change the month column to abbreviation, add water years, and add seasons  to before wetlands data frame
+before_wetlands$Date <- mdy(before_wetlands$Date)
+before_wetlands$year <- year(before_wetlands$Date)
+before_wetlands$month <- month(before_wetlands$Date)
+before_wetlands <- before_wetlands %>%
+  mutate(month = month.abb[month])
+before_wetlands$water_year <- year(before_wetlands$Date) + ifelse(month(before_wetlands$Date) >= 10, 1, 0)
+before_wetlands$season <- ifelse(before_wetlands$month %in% c("Dec", "Jan", "Feb"), "Winter",
+                        ifelse(before_wetlands$month %in% c("Mar", "Apr", "May"), "Spring",
+                               ifelse(before_wetlands$month %in% c("Jun", "Jul", "Aug"), "Summer",
+                                      ifelse(before_wetlands$month %in% c("Sep", "Oct", "Nov"), "Fall", NA))))
+#add position column
+before_season <- before_wetlands %>%
+  group_by(Nutrient, water_year, season) %>%
+  mutate(position = rep('before'))
+
+# adter wetlands files 
+after_wetlands <- read.csv('after/Bend.csv') %>%
+  select(ActivityStartDate, CharacteristicName, ResultMeasureValue) %>% 
+        rename("Date" = "ActivityStartDate", 
+               "Nutrient" = 'CharacteristicName',
+               'Result' = 'ResultMeasureValue') %>%
+  na.omit()
+
+
+
+#add date, year, month, change the month column to abbreviation, add water years, and add seasons  to after wetlands data frame
+after_wetlands$Date <- mdy(after_wetlands$Date)
+after_wetlands$year <- year(after_wetlands$Date)
+after_wetlands$month <- month(after_wetlands$Date) 
+after_wetlands <- after_wetlands %>%
+  mutate(month = month.abb[month])
+after_wetlands$water_year <- year(after_wetlands$Date) + ifelse(month(after_wetlands$Date) >= 10, 1, 0)
+after_wetlands$season <- ifelse(after_wetlands$month %in% c("Dec", "Jan", "Feb"), "Winter",
+                        ifelse(after_wetlands$month %in% c("Mar", "Apr", "May"), "Spring",
+                               ifelse(after_wetlands$month %in% c("Jun", "Jul", "Aug"), "Summer",
+                                     ifelse(after_wetlands$month %in% c("Sep", "Oct", "Nov"), "Fall", NA))))
+
+#add position column
+after_season <- after_wetlands %>%
+  group_by(Nutrient, water_year, season) %>%
+  mutate(position = rep('after'))
+
+#read in before wetland files
+
+in_wetlands <- read.csv('in/in.csv') %>%
+  select(ActivityStartDate, CharacteristicName, ResultMeasureValue) %>% 
+        rename("Date" = "ActivityStartDate", 
+               "Nutrient" = 'CharacteristicName',
+               'Result' = 'ResultMeasureValue') %>%
+  na.omit()
+#add date, year, month, change the month column to abbreviation, add water years, and add seasons  to in wetlands data frame
+in_wetlands$Date <- mdy(in_wetlands$Date)
+in_wetlands$year <- year(in_wetlands$Date)
+in_wetlands$month <- month(in_wetlands$Date) 
+in_wetlands <- in_wetlands %>%
+  mutate(month = month.abb[month])
+in_wetlands$water_year <- year(in_wetlands$Date) + ifelse(month(in_wetlands$Date) >= 10, 1, 0)
+in_wetlands$season <- ifelse(in_wetlands$month %in% c("Dec", "Jan", "Feb"), "Winter",
+                        ifelse(in_wetlands$month %in% c("Mar", "Apr", "May"), "Spring",
+                               ifelse(in_wetlands$month %in% c("Jun", "Jul", "Aug"), "Summer",
+                                      ifelse(in_wetlands$month %in% c("Sep", "Oct", "Nov"), "Fall", NA))))
+#add position column 
+in_season <- in_wetlands %>%
+  group_by(Nutrient, water_year, season) %>%
+  mutate(position = rep('in'))
+#combine before, after, and in wetlands data frames into 1 data frame
+Total_Data_new <- rbind(before_season, after_season, in_season) %>%
+  mutate(water_year = as.factor(water_year)) 
+Total_Data <- pivot_wider(Total_Data_new, names_from = Nutrient, values_from = Result, values_fn = {mean})
+
+```
+
+
+
+
+
+
+## Statistical Analysis
+
+  The data was downloaded as CSV files and imported into R studio. From there, monthly average were created for each nutrient and environmental factor based on the location. To analyze the variation in nitrate and nitrite concentrations by position, water year, and season, a bar graph was generated using the ggplot2 package in R. To determine the correlations between different water parameters, a correlation heat map was generated using the ggplot package in R. The graph showed the correlation coefficients between nitrate, nitrite, DO, temperature, and pH. An ANOVA test was conducted to analyze the variation in nitrate and nitrite concentrations by year. The nitrate and nitrite concentrations were analyzed using the aov function in R. The significance level was set at p < 0.05. Post-hoc tests (Tukey HSD) were conducted to determine significant differences between individual positions. Furthermore, the percent change between the locations was found and graphed using the ggplot package in R studio. 

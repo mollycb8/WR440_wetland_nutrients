@@ -4,32 +4,26 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 6 Discussion | Bookdown Template</title>
-  <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
-The HTML output format for this example is bookdown::gitbook,
-set in the _output.yml file.</p>" />
-  <meta name="generator" content="bookdown 0.30 and GitBook 2.6.7" />
+  <title>Chapter 5 Discussion | Nitrate and Nitrite Removal through Wetlands in the Delaware River</title>
+  <meta name="description" content="Chapter 5 Discussion | Nitrate and Nitrite Removal through Wetlands in the Delaware River" />
+  <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 6 Discussion | Bookdown Template" />
+  <meta property="og:title" content="Chapter 5 Discussion | Nitrate and Nitrite Removal through Wetlands in the Delaware River" />
   <meta property="og:type" content="book" />
   
-  <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
-The HTML output format for this example is bookdown::gitbook,
-set in the _output.yml file.</p>" />
-  <meta name="github-repo" content="rstudio/bookdown-demo" />
+  
+  
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 6 Discussion | Bookdown Template" />
+  <meta name="twitter:title" content="Chapter 5 Discussion | Nitrate and Nitrite Removal through Wetlands in the Delaware River" />
   
-  <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
-The HTML output format for this example is bookdown::gitbook,
-set in the _output.yml file.</p>" />
+  
   
 
-<meta name="author" content="" />
+<meta name="author" content="Caz Bell" />
 
 
-<meta name="date" content="2023-04-04" />
+<meta name="date" content="2023-05-09" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -58,6 +52,20 @@ set in the _output.yml file.</p>" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.6.1/htmlwidgets.js"></script>
+<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding-2.1.1/leaflet.js"></script>
+<script src="libs/leaflet-providers-1.9.0/leaflet-providers_1.9.0.js"></script>
+<script src="libs/leaflet-providers-plugin-2.1.1/leaflet-providers-plugin.js"></script>
+<link href="libs/leaflet-awesomemarkers-2.0.3/leaflet.awesome-markers.css" rel="stylesheet" />
+<script src="libs/leaflet-awesomemarkers-2.0.3/leaflet.awesome-markers.min.js"></script>
+<link href="libs/bootstrap-3.3.7/bootstrap.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.7/bootstrap.min.js"></script>
 
 
 <style type="text/css">
@@ -125,28 +133,6 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
-<style type="text/css">
-/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}
-</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -164,16 +150,32 @@ div.csl-indent {
 <li><a href="./">A Minimal Book Example</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Overview</a>
+<li class="chapter" data-level="1" data-path="abstract.html"><a href="abstract.html"><i class="fa fa-check"></i><b>1</b> Abstract</a></li>
+<li class="chapter" data-level="2" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>2</b> Introduction</a></li>
+<li class="chapter" data-level="3" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>3</b> Methods</a>
 <ul>
-<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#render-book"><i class="fa fa-check"></i><b>1.1</b> Render book</a></li>
+<li class="chapter" data-level="3.1" data-path="methods.html"><a href="methods.html#data-collection"><i class="fa fa-check"></i><b>3.1</b> Data Collection</a></li>
+<li class="chapter" data-level="3.2" data-path="methods.html"><a href="methods.html#statistical-analysis"><i class="fa fa-check"></i><b>3.2</b> Statistical Analysis</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="abstract.html"><a href="abstract.html"><i class="fa fa-check"></i><b>2</b> Abstract</a></li>
-<li class="chapter" data-level="3" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>3</b> Intro</a></li>
-<li class="chapter" data-level="4" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>4</b> Methods</a></li>
-<li class="chapter" data-level="5" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>5</b> Results</a></li>
-<li class="chapter" data-level="6" data-path="discussion.html"><a href="discussion.html"><i class="fa fa-check"></i><b>6</b> Discussion</a></li>
-<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="4" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>4</b> Results</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="results.html"><a href="results.html#nitrate-concentrations"><i class="fa fa-check"></i><b>4.1</b> Nitrate Concentrations</a></li>
+<li class="chapter" data-level="4.2" data-path="results.html"><a href="results.html#nitrite-concentrations"><i class="fa fa-check"></i><b>4.2</b> Nitrite Concentrations</a></li>
+<li class="chapter" data-level="4.3" data-path="results.html"><a href="results.html#percent-change"><i class="fa fa-check"></i><b>4.3</b> Percent Change</a></li>
+<li class="chapter" data-level="4.4" data-path="results.html"><a href="results.html#anova-for-nitrate"><i class="fa fa-check"></i><b>4.4</b> ANOVA for Nitrate</a></li>
+<li class="chapter" data-level="4.5" data-path="results.html"><a href="results.html#anova-for-nitrite"><i class="fa fa-check"></i><b>4.5</b> ANOVA for Nitrite</a></li>
+<li class="chapter" data-level="4.6" data-path="results.html"><a href="results.html#dissolved-oxygen"><i class="fa fa-check"></i><b>4.6</b> Dissolved Oxygen</a></li>
+<li class="chapter" data-level="4.7" data-path="results.html"><a href="results.html#temperature"><i class="fa fa-check"></i><b>4.7</b> Temperature</a></li>
+<li class="chapter" data-level="4.8" data-path="results.html"><a href="results.html#ph"><i class="fa fa-check"></i><b>4.8</b> pH</a></li>
+<li class="chapter" data-level="4.9" data-path="results.html"><a href="results.html#correlation-of-parameter"><i class="fa fa-check"></i><b>4.9</b> Correlation of Parameter</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="discussion.html"><a href="discussion.html"><i class="fa fa-check"></i><b>5</b> Discussion</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="discussion.html"><a href="discussion.html#wetland-removal"><i class="fa fa-check"></i><b>5.1</b> Wetland Removal</a></li>
+<li class="chapter" data-level="5.2" data-path="discussion.html"><a href="discussion.html#environmental-factors"><i class="fa fa-check"></i><b>5.2</b> Environmental Factors</a></li>
+<li class="chapter" data-level="5.3" data-path="discussion.html"><a href="discussion.html#correlations"><i class="fa fa-check"></i><b>5.3</b> Correlations</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>6</b> References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -186,7 +188,7 @@ div.csl-indent {
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Bookdown Template</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Nitrate and Nitrite Removal through Wetlands in the Delaware River</a>
           </h1>
         </div>
 
@@ -194,15 +196,23 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="discussion" class="section level1 hasAnchor" number="6">
-<h1><span class="header-section-number">Chapter 6</span> Discussion<a href="discussion.html#discussion" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Reference items in your bibliography file(s) - those ending in <code>.bib</code> - using <code>@key</code>. E.g. <span class="citation">(<a href="#ref-ross2019aquasat" role="doc-biblioref">Ross et al. 2019</a>)</span></p>
-
+<div id="discussion" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">Chapter 5</span> Discussion<a href="discussion.html#discussion" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="wetland-removal" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> Wetland Removal<a href="discussion.html#wetland-removal" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>There was a statistically significant change in nitrate concentrations as water moved through the wetland locations. The findings indicate that the wetland area can effectively reduce the amount of nitrate in the water passing through it, which is a significant finding given the negative impacts that nitrate pollution can have on aquatic ecosystems. Additionally, the lack of a statistically significant difference in nitrate concentrations between the “in” and “after” positions suggests that most of the nitrate removal occurs early on in the wetland rather than towards the end. Furthermore, the relatively similar values of nitrate concentration throughout all seasons could be attributed to the industrial area surrounding the wetlands. This area could be providing a steady input of nitrate into the water leading to lower variability in the data set. The percent change in nitrate concentrations from the after position to the before being consistently positive also helps to show that nitrate concentrations are higher before passing through wetlands. Furthermore, the percent change from before to in was consistently negative but the percent change from in to after was both positive and negative. This helps to further signify that nitrate removal occurs within the earlier parts of the wetlands. It could also show that there are other possible nitrate inputs that occur near the end of the wetland. This would cause the after positions to have higher nitrate values than them in positions. However, the fact that the nitrate concentrations are still lower in the after position than in the before shows that despite these potential inputs, the wetlands are still able to filter excess nutrients out of the water thus leading to cleaner waterways.</p>
+<p>The results of the study showed that nitrite concentrations did not exhibit a significant change based on the location with respect to the wetlands in the Delaware River. The percent change graph also helped to show that there was no significant change for nitrite as it was highly variable with no clear pattern being recognized. With the percent change graph, the highest and lowest percent changes occurred in the same season at different water years and in the same position. This further shows that the wetlands did not have an impact on the nitrite concentrations in the water. However, unlike nitrate, it was observed that nitrite concentrations were usually higher in the fall season. This would show that in the fall excess nitrites are being added to the water during this time. It is also consistent with previous studies that have shown that nitrite levels tend to increase in the fall due to decreased sunlight and reduced biological activity. More research would have to be done to see if there is a certain outside factor that is causing variable nitrite levels throughout the wetlands.</p>
 </div>
-<h3>References<a href="references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div id="refs" class="references csl-bib-body hanging-indent">
-<div id="ref-ross2019aquasat" class="csl-entry">
-Ross, Matthew RV, Simon N Topp, Alison P Appling, Xiao Yang, Catherine Kuhn, David Butman, Marc Simard, and Tamlin M Pavelsky. 2019. <span>“AquaSat: A Data Set to Enable Remote Sensing of Water Quality for Inland Waters.”</span> <em>Water Resources Research</em> 55 (11): 10012–25.
+<div id="environmental-factors" class="section level2 hasAnchor" number="5.2">
+<h2><span class="header-section-number">5.2</span> Environmental Factors<a href="discussion.html#environmental-factors" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>There are other environmental impacts that could have impacted this data set. If this wetland is very high in organic material, it would make sense that the dissolved oxygen concentrations would be lower within and after the wetlands. The high amount of organic matter could lead to an increase in microbial activities that may deplete the oxygen supply. There was variability in temperature based on position, however, the data was not collected on the same day for each site. Because of this, it cannot be confirmed that wetlands have an impact on the temperature of water in this study.
+The average pH varied throughout the year and by location, however, the average pH for the Delaware River for all the water years was 7.3. This means that the water is usually not too acidic or basic. However, the pH of the water is more likely to become basic rather than acidic as the highest recorded value was 9.12 but the lowest was 6.3. The higher pH levels occurring in the summer months could be attributed to the increase in photosynthetic activity among the plants in the wetlands (Lowe et al., 2019). An increase in biological activity would lead to a decrease in pH which most likely occurs during the day in the summer.</p>
+</div>
+<div id="correlations" class="section level2 hasAnchor" number="5.3">
+<h2><span class="header-section-number">5.3</span> Correlations<a href="discussion.html#correlations" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Overall, there was very little correlation occurring between the different parameters studied. The strongest correlation coefficient was -0.92 between dissolved oxygen and temperature meaning that the two parameters may have an impact on one another. As temperature increases in the summer months dissolved oxygen would decrease and as temperature decreases in the winter, dissolved oxygen would increase. This coincides with previous research that has shown that as temperature increases, the solubility of oxygen decreases. This makes it harder for warmer waters to maintain dissolved oxygen concentrations. The second strongest correlation was between nitrite and dissolved oxygen. While the correlation coefficient was only -0.42 and therefore only considered to be of moderate correlation, some information can still be extracted. It could be possible that the amount of dissolved oxygen in the Delaware River could play a role in the concentration of nitrite.
+However, due to the small correlation coefficients found for the rest of the data, it cannot be confirmed that dissolved oxygen, temperature, and pH play a role in the nitrate/nitrite concentrations that occur within wetlands. Therefore, it is more likely that the wetlands are the main source of nitrate/nitrite removal. However, there are other factors that could be considered such as vegetation and sediments in the water that were not studied. Further research could help to show if other environmental factors have a higher correlation to nitrate and nitrite concentrations.</p>
+
 </div>
 </div>
             </section>
